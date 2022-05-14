@@ -17,7 +17,7 @@
    },
    "scripts": {
       "dev": "ts-node --transpile-only src/index.ts",
-      "start": "nodemon app.js",
+      "start": "ts-node --transpile-only src/index.ts",
       "typeorm": "ts-node  node_modules/typeorm/cli.js"  
    }
 }
