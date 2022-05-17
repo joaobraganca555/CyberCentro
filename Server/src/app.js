@@ -1,13 +1,25 @@
-const express = require('express');
+const express = require("express");
+const cors = require("cors");
+var xmlparser = require("express-xml-bodyparser");
+const indexRouter = require("./routes/index");
+require("dotenv").config(); // Using .env configs
+
+//Packages
 const app = express();
-const cors = require('cors'); 
-require('dotenv').config(); // Using .env configs
+app.use(cors());
+app.use(express.json());
+app.use(express.static("./public"));
+app.use(xmlparser());
 
-import { AppDataSource } from "./data-source"
-import { Address } from "./entity/Address";
+app.use("/api/v1", indexRouter);
 
+app.listen(process.env.PORT, () =>
+  console.log(`Server is listening on port ${process.env.PORT}...`)
+);
+
+
+/*
 AppDataSource.initialize().then(async () => {
-
     console.log("Inserting a new address into the database...")
     const address = new Address()
     address.City = "Porto"
@@ -22,10 +34,7 @@ AppDataSource.initialize().then(async () => {
     console.log("Loading address from the database...")
     const addresss = await AppDataSource.manager.find(Address)
     console.log("Loaded address: ", addresss)
-
-    // Start Server
-    app.listen(process.env.PORT, () =>
-        console.log(`Server is listening on port ${process.env.PORT}...`)
-    );
-
 }).catch(error => console.log(error))
+*/
+
+// Start Server
