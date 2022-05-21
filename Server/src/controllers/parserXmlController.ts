@@ -1,14 +1,19 @@
 const parserXML = {};
 
-const fs = require("fs").promises;
-const util = require("util");
-const xml2js = require("xml2js");
 
+import { DataSource, EntityManager } from "typeorm";
+import { BillingAddress } from "../entity/BillingAddress";
+
+const fs = require("fs").promises;
+const xml2js = require("xml2js");
 const parser = new xml2js.Parser();
 
 //Database Operations
 const insertCustomers = async (listCustomers) => {
-  //console.log(JSON.stringify(listCustomers));
+  listCustomers.forEach(customer => {
+      console.log(customer);
+      const billingAddress = 
+  });
 };
 
 const insertSuppliers = async (listSuppliers) => {
@@ -22,8 +27,6 @@ const insertInvoices = async (listInvoices) => {
 const insertProducts = async (listProducts) => {
   //console.log(JSON.stringify(listProducts));
 };
-
-const insertBillingAddresses = async () => {};
 
 //Read Saft File
 const readXMLFile = async (filePath) => {

@@ -1,11 +1,8 @@
 import "reflect-metadata"
 import { DataSource } from "typeorm"
-import { User } from "./entity/User"
-import { Address } from "./entity/Address"
 
 //Using .env configs
 require('dotenv').config();
-
 export const AppDataSource = new DataSource({
     type: "mssql", //Can't be used from .env
     host: process.env.TYPEORM_HOST,
@@ -15,9 +12,8 @@ export const AppDataSource = new DataSource({
     database: process.env.TYPEORM_DATABASE,
     synchronize: true,
     logging: false,
-    entities: ["src/entity/**/*.ts"],
+    entities: ["src/entity/**.ts"],
     migrations: ["src/migration/**/*.ts"],
     subscribers: [],
 });
-
 // Can be initializated here!
