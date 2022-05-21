@@ -15,8 +15,8 @@ export const AppDataSource = new DataSource({
     database: process.env.TYPEORM_DATABASE,
     synchronize: true,
     logging: false,
-    entities: [Address],
-    migrations: ["migration/*.ts"],
+    entities: ["src/entity/**/*.ts"],
+    migrations: ["src/migration/**/*.ts"],
     subscribers: [],
 });
 

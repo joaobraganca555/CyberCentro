@@ -6,13 +6,45 @@ const xml2js = require("xml2js");
 
 const parser = new xml2js.Parser();
 
-parserXML.importFile = async function (req, res) {
-  const data = await fs.readFile("public/teste.xml");
+//Database Operations
+const insertCustomers = async (listCustomers) => {
+  //console.log(JSON.stringify(listCustomers));
+};
 
-  parser.parseString(data, (err, result) => {
-    console.log(JSON.stringify(result));
-    res.status(200).json(result);
+const insertSuppliers = async (listSuppliers) => {
+  console.log(JSON.stringify(listSuppliers));
+};
+
+const insertInvoices = async (listInvoices) => {
+  //console.log(JSON.stringify(listInvoices));
+};
+
+const insertProducts = async (listProducts) => {};
+
+const insertBillingAddresses = async () => {};
+
+//Read Saft File
+const readXMLFile = async (filePath) => {
+  const data = await fs.readFile(filePath);
+  return data;
+};
+
+//Parse XML File to Json using xml2js lib -> Ex: "public/example.xml"
+const importFile = async (pathFile) => {
+  const data = await readXMLFile(pathFile);
+
+  return new Promise((resolve) => {
+    parser.parseString(data, (err, result) => {
+      resolve(result);
+    });
   });
+};
+
+parserXML.importFile = async function (req, res) {
+  const dataToJson = await importFile("public/saft_example.xml");
+  await insertCustomers(dataToJson.AuditFile.MasterFiles[0].Customer);
+  await insertSuppliers(dataToJson.AuditFile.MasterFiles[0].Supplier);
+  await insertInvoices(dataToJson.AuditFile.GeneralLedgerEntries[0]);
 };
 
 module.exports = parserXML;
