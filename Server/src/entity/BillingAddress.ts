@@ -1,4 +1,4 @@
-import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinColumn, OneToMany, OneToOne, PrimaryGeneratedColumn } from "typeorm";
 import { Customer } from "./Customer";
 import { Supplier } from "./Supplier";
 
@@ -18,10 +18,4 @@ export class BillingAddress {
 
   @Column()
   country: string;
-
-  @OneToMany(() => Supplier, (supplier) => supplier.billingAddress)
-  supplier: Supplier[];
-
-  @OneToMany(() => Customer, (customer) => customer.billingAddress)
-  customer: Customer[];
 }

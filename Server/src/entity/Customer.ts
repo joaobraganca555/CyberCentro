@@ -1,4 +1,10 @@
-import { Column, Entity, ManyToOne, PrimaryColumn } from "typeorm";
+import {
+  Column,
+  Entity,
+  JoinColumn,
+  OneToOne,
+  PrimaryColumn,
+} from "typeorm";
 import { BillingAddress } from "./BillingAddress";
 
 @Entity()
@@ -12,12 +18,13 @@ export class Customer {
   @Column()
   companyName: string;
 
-  @ManyToOne(() => BillingAddress, (billingAddress) => billingAddress.customer)
-  billingAddress: BillingAddress;
-
   @Column()
   telephone: string;
 
   @Column()
   email: string;
+
+  @OneToOne(() => BillingAddress)
+  @JoinColumn()
+  billingAddress: BillingAddress;
 }

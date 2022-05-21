@@ -12,14 +12,16 @@ const insertCustomers = async (listCustomers) => {
 };
 
 const insertSuppliers = async (listSuppliers) => {
-  console.log(JSON.stringify(listSuppliers));
+  //console.log(JSON.stringify(listSuppliers));
 };
 
 const insertInvoices = async (listInvoices) => {
   //console.log(JSON.stringify(listInvoices));
 };
 
-const insertProducts = async (listProducts) => {};
+const insertProducts = async (listProducts) => {
+  //console.log(JSON.stringify(listProducts));
+};
 
 const insertBillingAddresses = async () => {};
 
@@ -41,10 +43,11 @@ const importFile = async (pathFile) => {
 };
 
 parserXML.importFile = async function (req, res) {
-  const dataToJson = await importFile("public/saft_example.xml");
+  const dataToJson = await importFile("public/saft_tp.xml");
   await insertCustomers(dataToJson.AuditFile.MasterFiles[0].Customer);
   await insertSuppliers(dataToJson.AuditFile.MasterFiles[0].Supplier);
-  await insertInvoices(dataToJson.AuditFile.GeneralLedgerEntries[0]);
+  await insertProducts(dataToJson.AuditFile.MasterFiles[0].Product);
+  await insertInvoices(dataToJson.AuditFile.SourceDocuments[0].SalesInvoices);
 };
 
 module.exports = parserXML;
