@@ -1,8 +1,7 @@
-const parserXML = {};
-
-
 import { DataSource, EntityManager } from "typeorm";
 import { BillingAddress } from "../entity/BillingAddress";
+
+const parserXML:any = {};
 
 const fs = require("fs").promises;
 const xml2js = require("xml2js");
@@ -44,12 +43,12 @@ const importFile = async (pathFile) => {
   });
 };
 
-// parserXML.importFile = async function (req, res) {
-//   const dataToJson = await importFile("public/saft_tp.xml");
-//   await insertCustomers(dataToJson.AuditFile.MasterFiles[0].Customer);
-//   await insertSuppliers(dataToJson.AuditFile.MasterFiles[0].Supplier);
-//   await insertProducts(dataToJson.AuditFile.MasterFiles[0].Product);
-//   await insertInvoices(dataToJson.AuditFile.SourceDocuments[0].SalesInvoices);
-// };
+parserXML.importFile = async function (req, res) {
+   const dataToJson:any = await importFile("public/saft_tp.xml");
+   await insertCustomers(dataToJson.AuditFile.MasterFiles[0].Customer);
+   await insertSuppliers(dataToJson.AuditFile.MasterFiles[0].Supplier);
+   await insertProducts(dataToJson.AuditFile.MasterFiles[0].Product);
+   await insertInvoices(dataToJson.AuditFile.SourceDocuments[0].SalesInvoices);
+ };
 
 module.exports = parserXML;
