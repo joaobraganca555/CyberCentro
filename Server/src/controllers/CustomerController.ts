@@ -22,3 +22,8 @@ customerInterface.insertCustomer = async function(customer: any){
    
     await AppDataSource.manager.save(newCustomer);
   };
+
+  customerInterface.findCustomer = async function (customerID:string){
+      const customer = await AppDataSource.manager.findOneByOrFail(Customer,{customerID:customerID});
+      return customer;
+  };
