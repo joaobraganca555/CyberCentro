@@ -15,10 +15,7 @@ export class Supplier {
   @Column()
   telephone: string;
 
-  @Column()
-  email: string;
-
   @OneToOne(() => BillingAddress)
   @JoinColumn()
-  customer: BillingAddress;
+  billingAddress: BillingAddress;
 }

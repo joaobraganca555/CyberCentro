@@ -1,6 +1,9 @@
 import { AppDataSource } from "../data-source";
 import { BillingAddress } from "../entity/BillingAddress";
 import { Customer } from "../entity/Customer";
+import { customerInterface } from "./CustomerController"
+import { supplierInterface } from "./SupplierController";
+
 
 const parserXML: any = {};
 
@@ -8,33 +11,38 @@ const fs = require("fs").promises;
 const xml2js = require("xml2js");
 const parser = new xml2js.Parser();
 
+//Handle with errors
+function getErrorMessage(error: unknown) {
+  let today = new Date();
+  if (error instanceof Error)
+    return today.toDateString() + ":" + error.message + "\n";
+  else return today.toDateString() + ":" + String(error) + "\n";
+}
+
+//Logging the errors
+const reportError = async (message: string) => {
+  await fs.appendFile("public/logs.txt", message);
+};
+
 //Database Operations
 const insertCustomers = async (listCustomers) => {
   listCustomers.forEach(async (customer: any) => {
-    const billingAddress = new BillingAddress();
-    billingAddress.city = customer.BillingAddress[0].City ?? "NOT_DEFINED";
-    billingAddress.country =
-      customer.BillingAddress[0].Country ?? "NOT_DEFINED";
-    billingAddress.postalCode =
-      customer.BillingAddress[0].PostalCode ?? "NOT_DEFINED";
-    billingAddress.addressDetail =
-      customer.BillingAddress[0].AddressDetail ?? "NOT_DEFINED";
-
-    await AppDataSource.manager.save(billingAddress);
-
-    const newCustomer = new Customer();
-    newCustomer.customerID = customer.CustomerID ?? "NOT_DEFINED";
-    newCustomer.companyName = customer.CompanyName ?? "NOT_DEFINED";
-    newCustomer.customerTaxID = customer.CustomerTaxID ?? "NOT_DEFINED";
-
-    newCustomer.telephone = customer.Telephone ?? "NOT_DEFINED";
-    newCustomer.billingAddress = billingAddress;
-    await AppDataSource.manager.save(newCustomer);
+    try {
+      await customerInterface.insertCustomer(customer);
+    } catch (error) {
+      reportError(getErrorMessage(error));
+    }
   });
 };
 
 const insertSuppliers = async (listSuppliers) => {
-  //console.log(JSON.stringify(listSuppliers));
+  listSuppliers.forEach(async (supplier: any) => {
+    try {
+      await supplierInterface.insertSupplier(supplier);
+    } catch (error) {
+      reportError(getErrorMessage(error));
+    }
+  });
 };
 
 const insertInvoices = async (listInvoices) => {
@@ -64,10 +72,10 @@ const importFile = async (pathFile) => {
 
 parserXML.importFile = async function (req, res) {
   const dataToJson: any = await importFile("public/saft_tp.xml");
-  await insertCustomers(dataToJson.AuditFile.MasterFiles[0].Customer);
-  await insertSuppliers(dataToJson.AuditFile.MasterFiles[0].Supplier);
+  //await insertCustomers(dataToJson.AuditFile.MasterFiles[0].Customer);
+  //await insertSuppliers(dataToJson.AuditFile.MasterFiles[0].Supplier);
   await insertProducts(dataToJson.AuditFile.MasterFiles[0].Product);
-  await insertInvoices(dataToJson.AuditFile.SourceDocuments[0].SalesInvoices);
+  //await insertInvoices(dataToJson.AuditFile.SourceDocuments[0].SalesInvoices);
 };
 
 module.exports = parserXML;

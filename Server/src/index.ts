@@ -17,10 +17,10 @@ app.use(xmlparser());
 
 app.use("/api/v1", indexRouter);
 
-AppDataSource.initialize().then(async () => {
-    // Start Server
-    app.listen(process.env.PORT, () =>
-        console.log(`Server is listening on port ${process.env.PORT}...`)
-    );
 
-}).catch(error => console.log(error))
+AppDataSource.initialize();
+
+// Start Server
+app.listen(process.env.PORT, () =>
+    console.log(`Server is listening on port ${process.env.PORT}...`)
+);
