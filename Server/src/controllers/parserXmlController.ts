@@ -13,54 +13,54 @@ const parser = new xml2js.Parser();
 
 //Database Operations
 const insertCustomers = async (listCustomers) => {
-  listCustomers.forEach(async (customer: any) => {
+  for (let customer of listCustomers) {
     try {
       await customerInterface.insertCustomer(customer);
     } catch (error) {
       ErrorHandler.reportError(ErrorHandler.getErrorMessage(error));
     }
-  });
+  }
 };
 
 const insertSuppliers = async (listSuppliers) => {
-  listSuppliers.forEach(async (supplier: any) => {
+  for (let supplier of listSuppliers) {
     try {
       await supplierInterface.insertSupplier(supplier);
     } catch (error) {
       ErrorHandler.reportError(ErrorHandler.getErrorMessage(error));
     }
-  });
+  }
 };
 
 const insertInvoices = async (listInvoices) => {
-  listInvoices.forEach(async (invoice: any) => {
+  for (let invoice of listInvoices) {
     try {
       await invoiceInterface.insertInvoice(invoice);
     } catch (error) {
       ErrorHandler.reportError(ErrorHandler.getErrorMessage(error));
     }
-  });
+  }
 };
 
 const insertProducts = async (listProducts) => {
-  listProducts.forEach(async (product: any) => {
+  for (let product of listProducts) {
     try {
       await productInterface.insertProduct(product);
     } catch (error) {
       ErrorHandler.reportError(ErrorHandler.getErrorMessage(error));
     }
-  });
+  }
 };
 
 //Read Saft File
-const readXMLFile = async (filePath) => {
+const readFile = async (filePath) => {
   const data = await fs.readFile(filePath);
   return data;
 };
 
 //Parse XML File to Json using xml2js lib -> Ex: "public/example.xml"
 const importFile = async (pathFile) => {
-  const data = await readXMLFile(pathFile);
+  const data = await readFile(pathFile);
 
   return new Promise((resolve) => {
     parser.parseString(data, (err, result) => {
@@ -69,15 +69,22 @@ const importFile = async (pathFile) => {
   });
 };
 
-const populateDB = async(dataFromSaft:any) => {
+const createTablesDB = async()=>{
+  const script = await readFile("public/ScriptCreateTables.sql");
+  await AppDataSource.manager.query(String(script));
+};
+
+const populateDB = async (dataFromSaft: any) => {
   await insertCustomers(dataFromSaft.AuditFile.MasterFiles[0].Customer);
   await insertSuppliers(dataFromSaft.AuditFile.MasterFiles[0].Supplier);
   await insertProducts(dataFromSaft.AuditFile.MasterFiles[0].Product);
   await insertInvoices(dataFromSaft.AuditFile.SourceDocuments[0].SalesInvoices[0].Invoice);
-}
+};
+
 parserXML.importFile = async function (req, res) {
+  await createTablesDB();
   const dataToJson: any = await importFile("public/saft_tp.xml");
-  //await populateDB(dataToJson);
+  await populateDB(dataToJson);
 };
 
 module.exports = parserXML;
