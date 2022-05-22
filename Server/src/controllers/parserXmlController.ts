@@ -1,9 +1,7 @@
-import { AppDataSource } from "../data-source";
-import { BillingAddress } from "../entity/BillingAddress";
-import { Customer } from "../entity/Customer";
-import { customerInterface } from "./CustomerController"
+import { customerInterface } from "./CustomerController";
+import { invoiceInterface } from "./InvoiceController";
+import { productInterface } from "./ProductController";
 import { supplierInterface } from "./SupplierController";
-
 
 const parserXML: any = {};
 
@@ -46,11 +44,23 @@ const insertSuppliers = async (listSuppliers) => {
 };
 
 const insertInvoices = async (listInvoices) => {
-  //console.log(JSON.stringify(listInvoices));
+  listInvoices.forEach(async (invoice: any) => {
+    try {
+      await invoiceInterface.insertInvoice(invoice);
+    } catch (error) {
+      reportError(getErrorMessage(error));
+    }
+  });
 };
 
 const insertProducts = async (listProducts) => {
-  //console.log(JSON.stringify(listProducts));
+  listProducts.forEach(async (product: any) => {
+    try {
+      await productInterface.insertProduct(product);
+    } catch (error) {
+      reportError(getErrorMessage(error));
+    }
+  });
 };
 
 //Read Saft File
@@ -74,8 +84,8 @@ parserXML.importFile = async function (req, res) {
   const dataToJson: any = await importFile("public/saft_tp.xml");
   //await insertCustomers(dataToJson.AuditFile.MasterFiles[0].Customer);
   //await insertSuppliers(dataToJson.AuditFile.MasterFiles[0].Supplier);
-  await insertProducts(dataToJson.AuditFile.MasterFiles[0].Product);
-  //await insertInvoices(dataToJson.AuditFile.SourceDocuments[0].SalesInvoices);
+  //await insertProducts(dataToJson.AuditFile.MasterFiles[0].Product);
+  await insertInvoices(dataToJson.AuditFile.SourceDocuments[0].SalesInvoices);
 };
 
 module.exports = parserXML;

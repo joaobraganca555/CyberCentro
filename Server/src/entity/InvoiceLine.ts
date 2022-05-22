@@ -1,11 +1,11 @@
-import { Column, Entity, ManyToOne, OneToMany, PrimaryColumn } from "typeorm";
+import { Column, Entity, ManyToOne, OneToMany, PrimaryColumn, PrimaryGeneratedColumn } from "typeorm";
 import { Invoice } from "./Invoice";
 import { Product } from "./Product";
 
 @Entity()
 export class InvoiceLine {
-  @PrimaryColumn()
-  lineNumber: string;
+  @PrimaryGeneratedColumn()
+  lineNumber: number;
   
   @ManyToOne(() => Product, (product) => product.productCode)
   product: Product;
