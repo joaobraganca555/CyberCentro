@@ -69,12 +69,15 @@ const importFile = async (pathFile) => {
   });
 };
 
+const populateDB = async(dataFromSaft:any) => {
+  await insertCustomers(dataFromSaft.AuditFile.MasterFiles[0].Customer);
+  await insertSuppliers(dataFromSaft.AuditFile.MasterFiles[0].Supplier);
+  await insertProducts(dataFromSaft.AuditFile.MasterFiles[0].Product);
+  await insertInvoices(dataFromSaft.AuditFile.SourceDocuments[0].SalesInvoices[0].Invoice);
+}
 parserXML.importFile = async function (req, res) {
   const dataToJson: any = await importFile("public/saft_tp.xml");
-  //await insertCustomers(dataToJson.AuditFile.MasterFiles[0].Customer);
-  //await insertSuppliers(dataToJson.AuditFile.MasterFiles[0].Supplier);
-  //await insertProducts(dataToJson.AuditFile.MasterFiles[0].Product);
-  //await insertInvoices(dataToJson.AuditFile.SourceDocuments[0].SalesInvoices[0].Invoice);
+  //await populateDB(dataToJson);
 };
 
 module.exports = parserXML;
