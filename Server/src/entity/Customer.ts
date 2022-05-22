@@ -21,9 +21,6 @@ export class Customer {
   @Column()
   telephone: string;
 
-  @Column()
-  email: string;
-
   @OneToOne(() => BillingAddress)
   @JoinColumn()
   billingAddress: BillingAddress;
