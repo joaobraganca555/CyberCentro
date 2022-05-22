@@ -1,5 +1,4 @@
-import { DataSource, EntityManager } from "typeorm";
-import { BillingAddress } from "../entity/BillingAddress";
+import { Customer } from "../entity/Customer";
 
 const parserXML:any = {};
 
@@ -9,7 +8,10 @@ const parser = new xml2js.Parser();
 
 //Database Operations
 const insertCustomers = async (listCustomers) => {
+  console.log("sad");
   listCustomers.forEach(customer => {
+      const newCustomer = new Customer();
+      newCustomer.companyName = customer.companyName;
       console.log(customer);
   });
 };
