@@ -18,12 +18,11 @@ export const AppDataSource = new DataSource({
   username: process.env.TYPEORM_USERNAME,
   password: process.env.TYPEORM_PASSWORD,
   database: process.env.TYPEORM_DATABASE,
-  synchronize: true,
+  synchronize: false,
   logging: false,
   entities: [
     BillingAddress,
     Customer,
-    Header,
     Invoice,
     InvoiceLine,
     Supplier,

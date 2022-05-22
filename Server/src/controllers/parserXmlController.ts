@@ -1,3 +1,4 @@
+import { AppDataSource } from "../data-source";
 import { ErrorHandler } from "../utils/ErrorHandler";
 import { customerInterface } from "./CustomerController";
 import { invoiceInterface } from "./InvoiceController";
@@ -70,10 +71,10 @@ const importFile = async (pathFile) => {
 
 parserXML.importFile = async function (req, res) {
   const dataToJson: any = await importFile("public/saft_tp.xml");
-  await insertCustomers(dataToJson.AuditFile.MasterFiles[0].Customer);
-  await insertSuppliers(dataToJson.AuditFile.MasterFiles[0].Supplier);
-  await insertProducts(dataToJson.AuditFile.MasterFiles[0].Product);
-  await insertInvoices(dataToJson.AuditFile.SourceDocuments[0].SalesInvoices[0].Invoice);
+  //await insertCustomers(dataToJson.AuditFile.MasterFiles[0].Customer);
+  //await insertSuppliers(dataToJson.AuditFile.MasterFiles[0].Supplier);
+  //await insertProducts(dataToJson.AuditFile.MasterFiles[0].Product);
+  //await insertInvoices(dataToJson.AuditFile.SourceDocuments[0].SalesInvoices[0].Invoice);
 };
 
 module.exports = parserXML;
