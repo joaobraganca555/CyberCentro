@@ -6,16 +6,21 @@ var xmlparser = require("express-xml-bodyparser");
 require('dotenv').config(); // Using .env configs
 
 import { AppDataSource } from "./data-source"
-import { Header } from "./entity/Header";
 
 var indexRouter = require("./routes/indexRoute");
+var authRoute = require("./routes/authRoute");
 
-app.use(cors());
+app.use(cors({
+    credentials: true,
+    origin: "http://localhost:4200"
+}));
+
 app.use(express.json());
 app.use(express.static("./public"));
 app.use(xmlparser());
 
-app.use("/api/v1", indexRouter);
+app.use("/api", indexRouter);
+app.use("/api/auth", authRoute);
 
 
 AppDataSource.initialize();

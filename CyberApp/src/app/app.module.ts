@@ -9,6 +9,7 @@ import { MainComponent } from './shared/main/main.component';
 import { LoginComponent } from './login/login.component';
 import { StructureComponent } from './shared/structure/structure.component';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [FormBuilder],
   bootstrap: [AppComponent]
