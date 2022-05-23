@@ -6,9 +6,19 @@
     <app-sidebar></app-sidebar>
   </div>
 
-  <main>
-    <router-outlet></router-outlet>
-  </main>
+  <div class="container sample">
+    <div class="options vertical">
+      <span id="legendTitle">Renewable Electricity Generated</span>
+    </div>
+    <div class="container">
+      <igx-category-chart height="400px" width="100%"
+                          [dataSource]="data"
+                          chartType="line"
+                          yAxisTitle="TWh"
+                          yAxisTitleLeftMargin="5">
+      </igx-category-chart>
+    </div>
+  </div>
 
   <div id="content1">Content1</div>
   <div id="content2">Content2</div>

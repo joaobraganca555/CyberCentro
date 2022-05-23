@@ -9,6 +9,12 @@ import { MainComponent } from './shared/main/main.component';
 import { LoginComponent } from './login/login.component';
 import { StructureComponent } from './shared/structure/structure.component';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from "@angular/forms";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import {
+  IgxCategoryChartModule,
+  IgxLegendModule
+} from "igniteui-angular-charts";
 
 @NgModule({
   declarations: [
@@ -17,13 +23,17 @@ import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
     SidebarComponent,
     MainComponent,
     LoginComponent,
-    StructureComponent
+    StructureComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    IgxCategoryChartModule,
+    IgxLegendModule,
+    BrowserAnimationsModule,
+    FormsModule,
   ],
   providers: [FormBuilder],
   bootstrap: [AppComponent]
