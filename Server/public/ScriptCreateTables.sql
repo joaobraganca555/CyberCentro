@@ -1,5 +1,10 @@
 
-
+CREATE TABLE "user"(
+    "userID" int NOT NULL IDENTITY(1,1),
+    "username" nvarchar(255) NOT NULL,
+    "email" nvarchar(255) NOT NULL,
+    "password" nvarchar(255) NOT NULL,
+)
 CREATE TABLE "billing_address"
 (
     "addressId" int NOT NULL IDENTITY(1,1),

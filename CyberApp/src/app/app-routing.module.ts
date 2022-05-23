@@ -4,7 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { StructureComponent } from './shared/structure/structure.component';
 
 const routes: Routes = [
-  { path: '', component: LoginComponent},
+  { path: '', component: LoginComponent },
   { path: 'menu', component: StructureComponent}
 ];
 
