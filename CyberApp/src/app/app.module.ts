@@ -5,7 +5,6 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {NavbarComponent} from './shared/navbar/navbar.component';
 import {SidebarComponent} from './shared/sidebar/sidebar.component';
-import {MainComponent} from './shared/main/main.component';
 import {LoginComponent} from './login/login.component';
 import {StructureComponent} from './shared/structure/structure.component';
 import {FormBuilder, ReactiveFormsModule} from '@angular/forms';
@@ -14,6 +13,10 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {IgxLegendModule} from "igniteui-angular-charts";
 import {IgxCategoryChartModule} from "igniteui-angular-charts";
 import {HttpClientModule} from '@angular/common/http';
+import { OrdersComponent } from './components/orders/orders.component';
+import { ProductsComponent } from './components/products/products.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { JwtHelperService, JWT_OPTIONS } from '@auth0/angular-jwt';
 
 
 @NgModule({
@@ -21,9 +24,11 @@ import {HttpClientModule} from '@angular/common/http';
     AppComponent,
     NavbarComponent,
     SidebarComponent,
-    MainComponent,
     LoginComponent,
     StructureComponent,
+    OrdersComponent,
+    ProductsComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,9 +39,11 @@ import {HttpClientModule} from '@angular/common/http';
     IgxLegendModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
-  providers: [FormBuilder],
+  providers: [FormBuilder,  
+    { provide: JWT_OPTIONS, useValue: JWT_OPTIONS },
+    JwtHelperService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

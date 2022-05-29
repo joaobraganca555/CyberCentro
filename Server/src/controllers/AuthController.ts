@@ -34,7 +34,8 @@ const registerHandler = async (req, res) => {
         user.username = name;
 
 		await AppDataSource.manager.save(user);
-
+        console.log("Registo efetuado com sucesso!");
+    
 		return res.json({ success: true });
 	}
 }

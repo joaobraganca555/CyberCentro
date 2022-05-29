@@ -22,7 +22,6 @@ export class LoginComponent implements OnInit {
   }
 
   submit(): void {
-    console.log(this.form.getRawValue());
     this.authenticationService.authenticate(this.form.getRawValue());
   }
 
