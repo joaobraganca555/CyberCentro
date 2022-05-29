@@ -1,5 +1,6 @@
 var bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
+var config = require('../utils/Config');
 
 import { AppDataSource } from "../data-source";
 import { User } from "../entity/User";
@@ -55,7 +56,7 @@ const loginHandler = async (req, res, next) => {
         } else {
             console.log("Encontrado!");
             
-            const token = jwt.sign({ id: user.userID, name: user.username}, 'supersecret', { expiresIn: '1d'});
+            const token = jwt.sign({ id: user.userID, name: user.username}, config.secret, { expiresIn: '1d'});
            
             return res.status(200).send({ auth: true, token: token, name: user.username, id: user.userID });
         }
