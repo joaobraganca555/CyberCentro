@@ -2,13 +2,14 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import {JwtHelperService} from '@auth0/angular-jwt';
+import { environment } from '../../../environments/environment';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthenticationService {
-  API_URL: string = 'http://localhost:3000/api'
+  API_URL: string = environment.api_url;
   API_URL_LOGIN: string = `${this.API_URL}/auth/login`
   API_URL_REGISTER: string = `${this.API_URL}/auth/register`
 
