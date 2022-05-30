@@ -88,6 +88,13 @@ invoiceInterface.getTotalGrossByZone = async function (req, res) {
 
 };
 
+invoiceInterface.getGrossByFamily = async function (req, res) {
+    return res.json(await invoiceRepository
+        .query("Select sum(CAST(unitPrice AS float) * quantity * (1+ CAST(taxBase AS float)/100)) as total, productGroup From invoice_line\n" +
+            "INNER JOIN product ON invoice_line.productProductCode = product.productCode\n" +
+            "GROUP BY productGroup"));
+};
+
 module.exports = invoiceInterface;
 
 

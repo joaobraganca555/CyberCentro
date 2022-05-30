@@ -7,7 +7,6 @@ import {json} from "express";
 export const productInterface: any = {};
 
 const productRepository = AppDataSource.getRepository(Product)
-const invoiceLineRepository = AppDataSource.getRepository(InvoiceLine)
 
 productInterface.insertProduct = async (product: any) => {
   const newProduct = new Product();
