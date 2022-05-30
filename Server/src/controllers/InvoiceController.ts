@@ -6,6 +6,8 @@ import { ErrorHandler } from "../utils/ErrorHandler";
 import { customerInterface } from "./CustomerController";
 import { productInterface } from "./ProductController";
 
+const invoiceRepository = AppDataSource.getRepository(Invoice)
+
 export const invoiceInterface: any = {};
 
 invoiceInterface.insertInvoiceLine = async (invoiceLineData:any,product: Product,invoice:Invoice) =>{
@@ -44,3 +46,43 @@ invoiceInterface.insertInvoice = async (invoice: any) => {
     ErrorHandler.reportError(ErrorHandler.getErrorMessage(error));
   }
 };
+
+invoiceInterface.getAllInvoices = async function (req, res) {
+
+    const allInvoices = await invoiceRepository.find()
+    console.log("Invoices: ", allInvoices)
+
+    return res.json(allInvoices);
+
+};
+
+invoiceInterface.getTotalGross = async function (req, res) {
+
+    const allInvoices = await invoiceRepository.find()
+
+    return res.json(allInvoices.reduce((totalGross, invoice)=> parseFloat(invoice.grossTotal) + totalGross,0));
+
+};
+
+invoiceInterface.getTotalGrossByYearAndMonth = async function (req, res) {
+
+    const allInvoices = await invoiceRepository.find()
+
+    let date = new Date(req.body.date);
+
+    let number = allInvoices.filter(invoice =>
+            new Date(invoice.invoiceDate).getMonth() == date.getMonth() &&
+            new Date(invoice.invoiceDate).getFullYear() == date.getFullYear())
+        .reduce((totalGross, invoice)=> parseFloat(invoice.grossTotal) + totalGross,0);
+
+    return res.json(number);
+
+};
+
+
+module.exports = invoiceInterface;
+
+
+
+
+

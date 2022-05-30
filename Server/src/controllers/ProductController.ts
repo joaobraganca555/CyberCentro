@@ -1,7 +1,11 @@
 import { AppDataSource } from "../data-source";
 import { Product } from "../entity/Product";
+import {invoiceInterface} from "./InvoiceController";
+import {Invoice} from "../entity/Invoice";
 
 export const productInterface: any = {};
+
+const productRepository = AppDataSource.getRepository(Product)
 
 productInterface.insertProduct = async (product: any) => {
   const newProduct = new Product();
@@ -19,3 +23,12 @@ productInterface.findProduct = async (productID: string) => {
   });
   return product;
 };
+
+productInterface.getAllProducts = async function (req, res) {
+
+  return res.json(await productRepository.find());
+
+};
+
+
+module.exports = productInterface;

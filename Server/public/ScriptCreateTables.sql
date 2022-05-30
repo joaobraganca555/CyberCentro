@@ -1,3 +1,4 @@
+CREATE DATABASE "SIO_CyberCentro"
 
 CREATE TABLE "user"(
     "userID" int NOT NULL IDENTITY(1,1),
