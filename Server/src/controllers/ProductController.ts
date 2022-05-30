@@ -1,11 +1,13 @@
 import { AppDataSource } from "../data-source";
 import { Product } from "../entity/Product";
-import {invoiceInterface} from "./InvoiceController";
-import {Invoice} from "../entity/Invoice";
+import {InvoiceLine} from "../entity/InvoiceLine";
+import {createQueryBuilder} from "typeorm";
+import {json} from "express";
 
 export const productInterface: any = {};
 
 const productRepository = AppDataSource.getRepository(Product)
+const invoiceLineRepository = AppDataSource.getRepository(InvoiceLine)
 
 productInterface.insertProduct = async (product: any) => {
   const newProduct = new Product();
@@ -26,6 +28,15 @@ productInterface.findProduct = async (productID: string) => {
 
 productInterface.getAllProducts = async function (req, res) {
   return res.json(await productRepository.find());
+};
+
+productInterface.getTopProductsByQuantity = async function (req, res) {
+  return res.json(await productRepository
+      .query("SELECT * FROM product\n" +
+          "LEFT JOIN invoice_line ON product.productCode = productProductCode\n" +
+          "WHERE invoice_line.productProductCode IS NOT NULL\n" +
+          " ORDER BY quantity\n" +
+          " DESC"));
 };
 
 module.exports = productInterface;

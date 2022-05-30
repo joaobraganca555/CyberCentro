@@ -7,5 +7,6 @@ const productController = require("../controllers/ProductController");
 
 //GET ALL
 router.get("", productController.getAllProducts);
+router.get("/top", productController.getTopProductsByQuantity);
 
 module.exports = router;
