@@ -1,1 +1,48 @@
-<p>customers works!</p>
+<div class="large-content">
+    <div class="content">
+
+      <div class="table-responsive">
+         <table class="table table-striped caption-top table-bordered">
+            <caption>Lista de clientes</caption>
+            <thead class="table-light sticky-top">
+              <tr>
+                <th *ngFor="let column of displayedColumns" scope="col">{{column}}</th>
+              </tr>
+            </thead>
+            <tbody>
+               <tr *ngFor="let customer of customers">
+                 <td>{{customer.customerID}}</td>
+                 <td>{{customer.customerTaxID}}</td>
+                 <td>{{customer.companyName}}</td>
+               </tr>
+             </tbody>
+         </table>
+
+       </div>
+   </div>
+ 
+   <div class="content">
+   
+   </div>
+</div>
+ 
+<div class="small-content">
+ 
+   <!-- Chart 1 -->
+   <div class="content">
+
+   </div>
+ 
+   <!-- Chart 2 -->
+   <div class="content">
+   
+   </div>
+ 
+   <!-- Chart 3 -->
+   <div class="content">
+ 
+   </div>
+</div>
+ 
+ 
+   
