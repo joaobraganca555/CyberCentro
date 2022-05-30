@@ -16,8 +16,14 @@
 
 .content {
     display: flex;
+    flex-grow: 1;
     height: 100%;
-    /*border: 1px solid brown;*/
+    border: 1px solid brown;
+}
+
+.content-table {
+    display: flex;
+    height: 100%;
 }
 
 /* For Ignite Charts */

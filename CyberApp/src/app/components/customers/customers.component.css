@@ -17,7 +17,13 @@
 .content {
     display: flex;
     height: 100%;
-    /*border: 1px solid brown;*/
+    flex-grow: 1;
+    border: 1px solid brown;
+}
+
+.content-table {
+    display: flex;
+    height: 100%;
 }
 
 /* For Ignite Charts */

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CustomerService } from 'src/app/services/customers/customer.service';
+import { InvoicesService } from 'src/app/services/invoices/invoices.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  totalGross: number = 0;
+  customersNumber: number = 0;
+
   public data: any[];
 
   public data2 = [
@@ -20,7 +25,7 @@ export class DashboardComponent implements OnInit {
 
   public data3: any;
 
-  constructor() {
+  constructor(private invoicesService: InvoicesService, private customerService: CustomerService) {
     this.data = [
       { Year: "2009", Europe: 31 },
       { Year: "2010", Europe: 43 },
@@ -45,6 +50,11 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.invoicesService.getTotalGross().subscribe((res) => {
+      this.totalGross = Math.round((res + Number.EPSILON) * 100) / 100;
+    });
+
+    this.customerService.getAllCustomers().subscribe((customers: any) => {this.customersNumber = customers.length})
   }
 
 }

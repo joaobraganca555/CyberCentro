@@ -1,44 +1,36 @@
 <div class="large-content">
     <div class="content">
 
-      <div class="table-responsive">
-         <table class="table table-striped caption-top table-bordered">
-            <caption>Lista de produtos</caption>
-            <thead class="table-light sticky-top">
-              <tr>
-                <th *ngFor="let column of displayedColumns" scope="col">{{column}}</th>
-              </tr>
-            </thead>
-            <tbody>
-               <tr *ngFor="let product of products">
-                 <td>{{product.productCode}}</td>
-                 <td>{{product.productGroup}}</td>
-                 <td>{{product.productDescription}}</td>
-               </tr>
-             </tbody>
-         </table>
 
-       </div>
-   </div>
- 
-   <div class="content">
-   
    </div>
 </div>
  
 <div class="small-content">
  
    <!-- Chart 1 -->
-   <div class="content">
+   <div class="content-table">
 
-   </div>
+    <div class="table-responsive">
+      <table class="table table-striped caption-top table-bordered">
+         <caption>Lista de produtos</caption>
+         <thead class="table-light sticky-top">
+           <tr>
+             <th *ngFor="let column of displayedColumns" scope="col">{{column}}</th>
+           </tr>
+         </thead>
+         <tbody>
+            <tr *ngFor="let product of products">
+              <td>{{product.productCode}}</td>
+              <td>{{product.productGroup}}</td>
+              <td>{{product.productDescription}}</td>
+            </tr>
+          </tbody>
+      </table>
+
+    </div>
+   </div> 
  
    <!-- Chart 2 -->
-   <div class="content">
-   
-   </div>
- 
-   <!-- Chart 3 -->
    <div class="content">
  
    </div>
