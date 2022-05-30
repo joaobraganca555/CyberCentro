@@ -1,8 +1,13 @@
 import { AppDataSource } from "../data-source";
 import { BillingAddress } from "../entity/BillingAddress";
 import { Customer } from "../entity/Customer";
+import {productInterface} from "./ProductController";
+import {Invoice} from "../entity/Invoice";
+import {invoiceInterface} from "./InvoiceController";
 
 export const customerInterface:any = {}
+
+const customerRepository = AppDataSource.getRepository(Customer)
 
 customerInterface.insertCustomer = async function(customer: any){
     const billingAddress = new BillingAddress();
@@ -27,3 +32,11 @@ customerInterface.insertCustomer = async function(customer: any){
       const customer = await AppDataSource.manager.findOneByOrFail(Customer,{customerID:customerID});
       return customer;
   };
+
+
+customerInterface.getAllCustomers = async function (req, res) {
+    return res.json(await customerRepository.find());
+};
+
+module.exports = customerInterface;
+

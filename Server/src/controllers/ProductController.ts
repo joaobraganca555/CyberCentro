@@ -25,10 +25,7 @@ productInterface.findProduct = async (productID: string) => {
 };
 
 productInterface.getAllProducts = async function (req, res) {
-
   return res.json(await productRepository.find());
-
 };
-
 
 module.exports = productInterface;
