@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from 'src/app/services/products/products.service';
-import { Product } from '../../models/Product';
+import { Product } from '../../models/product';
 
 @Component({
   selector: 'app-products',
@@ -19,6 +19,7 @@ export class ProductsComponent implements OnInit {
       this.products = res;
     });
 
+    this.productsService.getTop10Products().subscribe((res: any) => {console.log(res)})
     //this.productsService
   }
 
