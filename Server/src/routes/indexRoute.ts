@@ -1,8 +1,8 @@
 var express = require("express");
 var parserRoute = require("./parserRoute");
-var invoiceRouter = require("./InvoiceRouter");
-var productRouter = require("./ProductRouter");
-var customerRouter = require("./CustomerRouter");
+var invoiceRouter = require("./invoiceRouter");
+var productRouter = require("./productRouter");
+var customerRouter = require("./customerRouter");
 var router = express.Router();
 
 //Map all route files here.
