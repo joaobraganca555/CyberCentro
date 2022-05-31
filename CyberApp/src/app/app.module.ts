@@ -24,6 +24,7 @@ import {
   IgxPieChartModule,
   IgxItemLegendModule
  } from "igniteui-angular-charts";
+ 
 import { SuppliersComponent } from './components/suppliers/suppliers.component';
 import { CustomersComponent } from './components/customers/customers.component';
 

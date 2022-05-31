@@ -1,27 +1,3 @@
-<div class="large-content">
-
-  <div class="container sample">
-    <div class="options vertical">
-        <span id="legendTitle">Gross By Zone</span>
-        <igx-legend #legend orientation="Horizontal"></igx-legend>
-    </div>
-    <div class="container">
-        <igx-category-chart height="100%" width="100%"
-                    [legend]="legend"
-                    [dataSource]="grossByZone"
-                    chartType="Column"
-                    xAxisInterval="1"
-                    yAxisTitle="Total Gross"
-                    yAxisTitleLeftMargin="10"
-                    yAxisTitleRightMargin="5"
-                    yAxisLabelLeftMargin="0"
-                    isHorizontalZoomEnabled="false"
-                    isVerticalZoomEnabled="false">
-        </igx-category-chart>
-    </div>
-  </div>  
-</div>
-
 <div class="small-content">
 
   <!-- Chart 1 -->
@@ -80,11 +56,41 @@
     
   </div>
 
-  <!-- Chart 2 -->
+</div>
+
+<!-- Divider -->
+<hr/>
+
+<div class="large-content">
+  <div class="content">
+    <div class="container sample">
+      <div class="options vertical">
+          <span id="legendTitle">Gross By Zone</span>
+          <igx-legend #legend orientation="Horizontal"></igx-legend>
+      </div>
+      <div class="container">
+          <igx-category-chart height="100%" width="100%"
+                      [legend]="legend"
+                      [dataSource]="grossByZone"
+                      chartType="Column"
+                      xAxisInterval="1"
+                      yAxisTitle="Total Gross"
+                      yAxisTitleLeftMargin="10"
+                      yAxisTitleRightMargin="5"
+                      yAxisLabelLeftMargin="0"
+                      isHorizontalZoomEnabled="false"
+                      isVerticalZoomEnabled="false">
+          </igx-category-chart>
+      </div>
+    </div>  
+  </div>
   <div class="content">
     
   </div>
+
 </div>
+
+
 
 
   

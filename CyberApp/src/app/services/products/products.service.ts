@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Product } from 'src/app/models/product';
+import { ProductTopQuantity } from 'src/app/models/product-top-quantity';
 import { environment } from '../../../environments/environment';
 
 @Injectable({
@@ -9,7 +10,7 @@ import { environment } from '../../../environments/environment';
 export class ProductsService {
   API_URL: string = environment.api_url;
   API_GET_ALL_PRODUCTS: string = `${this.API_URL}/product`
-  API_GET_TOP_10_PRODUCTS: string = `${this.API_URL}/product/top`
+  API_GET_TOP_PRODUCTS_QUANTITY: string = `${this.API_URL}/product/top`
 
   constructor(private http: HttpClient) { }
 
@@ -26,7 +27,7 @@ export class ProductsService {
     return this.http.get<Product>(this.API_GET_ALL_PRODUCTS);
   }
 
-  getTop10Products(): any {
-    return this.http.get<Product>(this.API_GET_TOP_10_PRODUCTS);
+  getTopProductsByQuantity(): any {
+    return this.http.get<ProductTopQuantity>(this.API_GET_TOP_PRODUCTS_QUANTITY);
   }
 }
