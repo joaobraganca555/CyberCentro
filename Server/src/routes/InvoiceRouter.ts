@@ -7,7 +7,7 @@ const invoiceController = require("../controllers/InvoiceController");
 router.get("", invoiceController.getAllInvoices);
 router.get("/totalGross", invoiceController.getTotalGross);
 router.get("/zone", invoiceController.getTotalGrossByZone);
-router.get("/grossByfamily", invoiceController.getGrossByFamily);
+router.get("/getGrossByFamilyByDate/:date", invoiceController.getGrossByFamilyByDate);
 
 router.post("/totalGrossByYearAndMonth", invoiceController.getTotalGrossByYearAndMonth);
 
