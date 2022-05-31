@@ -1,4 +1,5 @@
 export interface ProductTopQuantity {
+    productCode: number;
     productDescription: string;
-    quantity: number;
+    soma: number;
 }

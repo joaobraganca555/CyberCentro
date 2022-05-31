@@ -24,7 +24,11 @@
 
     </div>
 
+    <!-- ---------------------------------------------------------------- -->
+
+    <!-- Chart -->
     <div class="content column">
+
       <!-- Year picker -->
       <div class="yearPicker p-1">
         <h5 class="m-2">Choose the year</h5>
@@ -39,7 +43,6 @@
           </div>
       </div>
 
-      <!-- Chart top products by quantity by year -->
       <div class="content">
         <div class="container sample">
           <div class="options vertical">
@@ -55,7 +58,7 @@
                   <igx-category-y-axis label="productDescription" [dataSource]="topProductsQuantity" #yAxis isInverted="true" gap="0.5" overlap="-0.1">
                   </igx-category-y-axis>
       
-                  <igx-bar-series [dataSource]="topProductsQuantity" valueMemberPath="quantity" [xAxis]="xAxis" [yAxis]="yAxis" title="Sold quantity" showDefaultTooltip="true" isTransitionedInEnabled="true" isHighlightingEnabled="true">
+                  <igx-bar-series [dataSource]="topProductsQuantity" valueMemberPath="soma" [xAxis]="xAxis" [yAxis]="yAxis" title="Sold quantity" showDefaultTooltip="true" isTransitionedInEnabled="true" isHighlightingEnabled="true">
                   </igx-bar-series>
               </igx-data-chart>
           </div>
@@ -66,6 +69,8 @@
 </div>
 
 <hr class="my-12"/>
+
+<!-- ---------------------------------------------------------------- -->
 
 <div class="small-content"> 
   <!-- Chart 2 -->

@@ -25,14 +25,16 @@ export class ProductsComponent implements OnInit {
 
     this.yearValue = new Date().getFullYear().toString()  // returns the current year
 
-    this.productsService.getTopProductsByQuantity().subscribe((res: any) => {
-      console.log(res);
+    this.productsService.getTopProductsByQuantity(this.yearValue).subscribe((res: any) => {
       this.topProductsQuantity = res;
     })
   }
 
   selectYear(year: string) {
     this.yearValue = year;
+    this.productsService.getTopProductsByQuantity(this.yearValue).subscribe((res: any) => {
+      this.topProductsQuantity = res;
+    })
   }
 
 }

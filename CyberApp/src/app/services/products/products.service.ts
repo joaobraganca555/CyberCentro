@@ -27,7 +27,7 @@ export class ProductsService {
     return this.http.get<Product>(this.API_GET_ALL_PRODUCTS);
   }
 
-  getTopProductsByQuantity(): any {
-    return this.http.get<ProductTopQuantity>(this.API_GET_TOP_PRODUCTS_QUANTITY);
+  getTopProductsByQuantity(year: any): any {
+    return this.http.get<ProductTopQuantity>(`${this.API_GET_TOP_PRODUCTS_QUANTITY}/${year}`);
   }
 }
