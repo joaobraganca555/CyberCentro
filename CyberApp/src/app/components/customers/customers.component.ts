@@ -10,7 +10,7 @@ import { CustomerService } from 'src/app/services/customers/customer.service';
 export class CustomersComponent implements OnInit {
 
   customers: Customer[] = [];
-  displayedColumns: string[] = ['ID Cliente','Contribuinte','Nome'];
+  displayedColumns: string[] = ['Customer ID','Tax ID','Name'];
 
 
   constructor(private customerService: CustomerService) { }

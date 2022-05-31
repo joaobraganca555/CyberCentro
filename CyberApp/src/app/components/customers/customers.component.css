@@ -1,7 +1,7 @@
 .large-content {
     display: flex;
     width: 100%;
-    height: 55%;
+    height: 50%;
     /* border: 1px solid blue */
 }
 
@@ -24,14 +24,19 @@
 .content-table {
     display: flex;
     height: 100%;
+    padding: 7px;
+}
+
+.column {
+    flex-direction: column;
 }
 
 /* For Ignite Charts */
-/*.mt {
+.mt {
     margin-top: 20px;
 }
 
 .container {
     width: 100%;
     height: 92%;
-}*/
+}

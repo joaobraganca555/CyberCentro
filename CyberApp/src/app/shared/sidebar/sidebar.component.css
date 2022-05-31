@@ -58,3 +58,7 @@
   width: 5px;
   margin-right: 15px;
 }
+
+.nav-item:hover {
+  background-color: rgb(209, 207, 207)
+}

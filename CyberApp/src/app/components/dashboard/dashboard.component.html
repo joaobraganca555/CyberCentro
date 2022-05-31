@@ -1,6 +1,6 @@
 <div class="small-content">
 
-  <!-- Chart 1 -->
+  <!-- Sales, Customers -->
   <div class="content-info column p-2">
 
     <div class="content column p-1">
@@ -53,7 +53,21 @@
 
   <!-- Table -->
   <div class="content">
-    
+    <div class="container sample">
+      <div class="options vertical">
+          <span id="legendTitle">Renewable Electricity Generated</span>
+          <igx-legend #legend orientation="horizontal"></igx-legend>
+      </div>
+      <div class="container">
+          <igx-category-chart height="100%" width="100%"
+              [dataSource]="data"
+              [legend]="legend"
+              chartType="line"
+              yAxisTitle="TWh"
+              yAxisTitleLeftMargin="5">
+          </igx-category-chart>
+      </div>
+    </div>
   </div>
 
 </div>
