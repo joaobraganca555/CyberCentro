@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from 'src/app/services/products/products.service';
-import { Product } from '../../models/Product';
+import { Product } from '../../models/product';
+import { ProductTopQuantity } from '../../models/product-top-quantity';
 
 @Component({
   selector: 'app-products',
@@ -9,8 +10,11 @@ import { Product } from '../../models/Product';
 })
 export class ProductsComponent implements OnInit {
   products: Product[] = [];
-  top10products: Product[] = [];
-  displayedColumns: string[] = ['Código','Grupo','Descrição'];
+  topProductsQuantity: ProductTopQuantity[] = [];
+
+  displayedColumns: string[] = ['Code','Group','Description'];
+  yearsList: string[] = ['2018','2019','2020','2021','2022'];
+  yearValue: string = '';
 
   constructor(private productsService: ProductsService) { }
 
@@ -19,7 +23,16 @@ export class ProductsComponent implements OnInit {
       this.products = res;
     });
 
-    //this.productsService
+    this.yearValue = new Date().getFullYear().toString()  // returns the current year
+
+    this.productsService.getTopProductsByQuantity().subscribe((res: any) => {
+      console.log(res);
+      this.topProductsQuantity = res;
+    })
+  }
+
+  selectYear(year: string) {
+    this.yearValue = year;
   }
 
 }

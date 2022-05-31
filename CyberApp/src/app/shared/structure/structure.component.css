@@ -16,7 +16,7 @@ nav {
 }
 
 main {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   grid-area: main;
 }
 

@@ -10,18 +10,9 @@ import { InvoicesService } from 'src/app/services/invoices/invoices.service';
 export class DashboardComponent implements OnInit {
   totalGross: number = 0;
   customersNumber: number = 0;
+  grossByZone: any[] = [];
 
   public data: any[];
-
-  public data2 = [
-
-    {Franchise: "Marvel Universe All Films", TotalWorldBoxOfficeRevenue: 22.55, HighestGrossingMovieInSeries: 2.8 },
-    {Franchise: "Star Wars",                 TotalWorldBoxOfficeRevenue: 10.32, HighestGrossingMovieInSeries: 2.07},
-    {Franchise: "Harry Potter",              TotalWorldBoxOfficeRevenue: 9.19,  HighestGrossingMovieInSeries: 1.34},
-    {Franchise: "Avengers",                  TotalWorldBoxOfficeRevenue: 7.76,  HighestGrossingMovieInSeries: 2.8 },
-    {Franchise: "Spider Man",                TotalWorldBoxOfficeRevenue: 7.22,  HighestGrossingMovieInSeries: 1.28},
-    {Franchise: "James Bond",                TotalWorldBoxOfficeRevenue: 7.12,  HighestGrossingMovieInSeries: 1.11}
-  ];
 
   public data3: any;
 
@@ -55,6 +46,9 @@ export class DashboardComponent implements OnInit {
     });
 
     this.customerService.getAllCustomers().subscribe((customers: any) => {this.customersNumber = customers.length})
+
+    this.invoicesService.getTotalGrossByZone().subscribe((res)=>{this.grossByZone = res; console.log(res);
+    })
   }
 
 }

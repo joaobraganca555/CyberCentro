@@ -10,11 +10,12 @@ export class InvoicesService {
   API_GET_ALL_INVOICES: string = `${this.API_URL}/invoice`
   API_GET_TOTAL_GROSS: string = `${this.API_URL}/invoice/totalGross`
   API_GET_TOTAL_GROSS_BY_YEAR_AND_MONTH: string = `${this.API_URL}/invoice/totalGrossByYearAndMonth`
+  API_GET_TOTAL_GROSS_BY_ZONE: string = `${this.API_URL}/invoice/zone`
 
   constructor(private http: HttpClient) { }
 
   getAllInvoices() {
-    return this.http.get<Object>(this.API_GET_ALL_INVOICES);
+    return this.http.get<any>(this.API_GET_ALL_INVOICES);
   }
 
   getTotalGross() {
@@ -22,6 +23,10 @@ export class InvoicesService {
   }
 
   getTotalGrossByYearAndMonth(inputDate: Date) {
-    return this.http.post<Object>(this.API_GET_TOTAL_GROSS_BY_YEAR_AND_MONTH, { date: inputDate });
+    return this.http.post<any>(this.API_GET_TOTAL_GROSS_BY_YEAR_AND_MONTH, { date: inputDate });
+  }
+
+  getTotalGrossByZone() {
+    return this.http.get<any>(this.API_GET_TOTAL_GROSS_BY_ZONE);
   }
 }
