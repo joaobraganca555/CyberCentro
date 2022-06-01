@@ -34,4 +34,20 @@ customerInterface.insertCustomer = async function(customer: any){
     return res.json(await customerRepository.find());
 };
 
+customerInterface.getTopProductsByQuantity = async function (req, res) {
+  res.json(await customerRepository
+      .query("SELECT * FROM customer LEFT JOIN\n" +
+          "    (SELECT sum(CAST(quantity AS float)) as soma, customerID FROM customer\n" +
+          "        LEFT JOIN invoice ON customer.customerID = invoice.customerCustomerID\n" +
+          "        LEFT JOIN invoice_line ON invoice.invoiceNo = invoice_line.invoiceInvoiceNo\n" +
+          "        WHERE invoice_line.productProductCode IS NOT NULL\n" +
+          "        AND invoiceDate > CAST( @0 as DATE) \n" +
+          "        AND invoiceDate < CAST( @1 as DATE) \n" +
+          "        GROUP by customerID\n" +
+          "    ) AS s ON s.customerID = customer.customerID           \n" +
+          "ORDER BY soma\n" +
+          "DESC",
+          [req.params.date.toString(),(parseInt(req.params.date)+1).toString()]));
+};
+
 //module.exports = customerInterface;

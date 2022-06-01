@@ -5,5 +5,6 @@ var router = express.Router();
 
 //GET ALL
 router.get("",customerInterface.getAllCustomers);
+router.get("/topCustomers/:date",customerInterface.getAllCustomers);
 
 module.exports = router;
