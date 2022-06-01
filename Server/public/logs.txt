@@ -1,1 +1,364 @@
-
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertInvoice')
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (Consumidor final).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT507535863_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT503274151_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT507040511_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT513277676_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT980169933_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT501305130_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT500757771_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT507226933_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT504198190_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT504617478_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT508770211_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT505422832_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT501158600_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT507545230_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT515213268_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (502557400_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (502150181_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (507272773_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (502703628_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (510050719_F).
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'insertProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Cannot read properties of undefined (reading 'findProduct')
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (Consumidor final).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT507535863_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT503274151_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT507040511_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT513277676_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (Consumidor final).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT507535863_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT980169933_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT501305130_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT503274151_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT500757771_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT507040511_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT513277676_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT507226933_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT980169933_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT504198190_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT501305130_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT504617478_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT508770211_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT500757771_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT505422832_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT507226933_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT501158600_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT504198190_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT507545230_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT504617478_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT508770211_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT515213268_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (502557400_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT505422832_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (502150181_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT501158600_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (507272773_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT507545230_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT515213268_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (502703628_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (502557400_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (510050719_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (502150181_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (507272773_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (502703628_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (510050719_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (1).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (11).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (14).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (21).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (23).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (25).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (33).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (36).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (41).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (42).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (45).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (47).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (49).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (51).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (52).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (55).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (58).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (61).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (66).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (71).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (73).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (74).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (75).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (76).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (77).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (82).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (83).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (84).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (85).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (Especial).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/1).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/1).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/2).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/2).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/3).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/3).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/4).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/4).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/5).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/5).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/6).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/6).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/7).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/7).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/8).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/8).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/9).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/9).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/10).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/10).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/11).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/11).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/12).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/12).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/13).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/13).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/14).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/14).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/15).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/15).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/16).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/16).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/17).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/17).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/18).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/18).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/19).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/19).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/20).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/20).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/21).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/21).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/22).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/22).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/23).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/23).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/24).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/24).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/25).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/25).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/26).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/26).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/27).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/27).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FS 2022/1).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FS 2022/1).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FS 2022/2).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FS 2022/2).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FS 2022/3).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FS 2022/3).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FS 2022/4).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FS 2022/4).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FS 2022/5).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FS 2022/5).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (Consumidor final).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT507535863_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT503274151_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT507040511_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT513277676_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT980169933_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT501305130_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT500757771_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT507226933_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT504198190_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT504617478_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT508770211_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT505422832_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT501158600_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT507545230_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_e9918cbed042a3575e31d3e7332'. Cannot insert duplicate key in object 'dbo.customer'. The duplicate key value is (PT515213268_C).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (502557400_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (502150181_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (507272773_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (502703628_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_567813a6fd1a07d8bd40be2a23b'. Cannot insert duplicate key in object 'dbo.supplier'. The duplicate key value is (510050719_F).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (1).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (11).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (14).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (21).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (23).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (25).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (33).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (36).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (41).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (42).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (45).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (47).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (49).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (51).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (52).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (55).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (58).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (61).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (66).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (71).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (73).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (74).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (75).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (76).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (77).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (82).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (83).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (84).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (85).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_a3aead4d2b7d774d4b7e6a6c7b2'. Cannot insert duplicate key in object 'dbo.product'. The duplicate key value is (Especial).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/1).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/2).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/3).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/4).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/5).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/6).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/7).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/8).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/9).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/10).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/11).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/12).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/13).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/14).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/15).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/16).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/17).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/18).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/19).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/20).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/21).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/22).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/23).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/24).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/25).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/26).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FA 2022/27).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FS 2022/1).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FS 2022/2).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FS 2022/3).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FS 2022/4).
+Wed Jun 01 2022:Error: Violation of PRIMARY KEY constraint 'PK_7a07716f2519432623c404ee94b'. Cannot insert duplicate key in object 'dbo.invoice'. The duplicate key value is (FS 2022/5).

@@ -12,8 +12,4 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  removeSession(): void {
-    localStorage.removeItem('user');
-    console.log("Sessão terminada e token elimando!");
-  }
 }

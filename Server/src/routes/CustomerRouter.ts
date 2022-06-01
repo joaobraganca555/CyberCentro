@@ -1,11 +1,9 @@
-import {NextFunction} from "express";
+import {  customerInterface } from "../controllers/CustomerController";
 
 var express = require("express");
 var router = express.Router();
 
-const customerController = require("../controllers/CustomerController");
-
 //GET ALL
-router.get("", customerController.getAllCustomers);
+router.get("",customerInterface.getAllCustomers);
 
 module.exports = router;

@@ -1,9 +1,6 @@
 import { AppDataSource } from "../data-source";
 import { BillingAddress } from "../entity/BillingAddress";
 import { Customer } from "../entity/Customer";
-import {productInterface} from "./ProductController";
-import {Invoice} from "../entity/Invoice";
-import {invoiceInterface} from "./InvoiceController";
 
 export const customerInterface:any = {}
 
@@ -33,10 +30,8 @@ customerInterface.insertCustomer = async function(customer: any){
       return customer;
   };
 
-
-customerInterface.getAllCustomers = async function (req, res) {
+  customerInterface.getAllCustomers = async function (req, res) {
     return res.json(await customerRepository.find());
 };
 
-module.exports = customerInterface;
-
+//module.exports = customerInterface;

@@ -1,12 +1,10 @@
-import {NextFunction} from "express";
+import { productInterface } from "../controllers/ProductController";
 
 var express = require("express");
 var router = express.Router();
 
-const productController = require("../controllers/ProductController");
-
 //GET ALL
-router.get("", productController.getAllProducts);
-router.get("/top/:date", productController.getTopProductsByQuantity);
+router.get("", productInterface.getAllProducts);
+router.get("/top/:date", productInterface.getTopProductsByQuantity);
 
 module.exports = router;

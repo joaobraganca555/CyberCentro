@@ -1,15 +1,17 @@
 var express = require("express");
 var router = express.Router();
 
-const invoiceController = require("../controllers/InvoiceController");
+import {  invoiceInterface } from "../controllers/InvoiceController";
 
 //GET ALL
-router.get("", invoiceController.getAllInvoices);
-router.get("/totalGross", invoiceController.getTotalGross);
-router.get("/zone", invoiceController.getTotalGrossByZone);
-router.get("/getGrossByFamilyByDate/:date", invoiceController.getGrossByFamilyByDate);
 
-router.post("/totalGrossByYearAndMonth", invoiceController.getTotalGrossByYearAndMonth);
+router.get("", invoiceInterface.getAllInvoices);
+router.get("/totalGross", invoiceInterface.getTotalGross);
+router.get("/zone", invoiceInterface.getTotalGrossByZone);
+router.get("/getGrossByFamilyByDate/:date", invoiceInterface.getGrossByFamilyByDate);
+
+router.post("/totalGrossByYearAndMonth", invoiceInterface.getTotalGrossByYearAndMonth);
+
 
 
 module.exports = router;

@@ -1,8 +1,5 @@
 import { AppDataSource } from "../data-source";
 import { Product } from "../entity/Product";
-import {InvoiceLine} from "../entity/InvoiceLine";
-import {createQueryBuilder} from "typeorm";
-import {json} from "express";
 
 export const productInterface: any = {};
 
@@ -30,7 +27,7 @@ productInterface.getAllProducts = async function (req, res) {
 };
 
 productInterface.getTopProductsByQuantity = async function (req, res) {
-  return res.json(await productRepository
+  res.json(await productRepository
       .query("SELECT product.productCode, productDescription, soma FROM product LEFT JOIN\n" +
           "    (SELECT sum(CAST(quantity AS float)) as soma, productCode FROM product\n" +
           "    LEFT JOIN invoice_line ON product.productCode = productProductCode \n" +
@@ -46,4 +43,6 @@ productInterface.getTopProductsByQuantity = async function (req, res) {
           [req.params.date.toString(),(parseInt(req.params.date)+1).toString()]));
 };
 
-module.exports = productInterface;
+//module.exports = productInterface;
+
+

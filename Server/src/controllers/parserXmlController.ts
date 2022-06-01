@@ -84,11 +84,8 @@ const populateDB = async (dataFromSaft: any) => {
 parserXML.importFile = async function (req, res) {
   //***Need to have already created an instance DB running called BD_CyberCentro
   //await createTablesDB();
-
-  const dataToJson: any = await importFile("public/saft.xml");
-
+  const dataToJson: any = await importFile("public/saft_tp.xml");
   await populateDB(dataToJson);
-  res.status(200).send({success: true});
 };
 
 module.exports = parserXML;

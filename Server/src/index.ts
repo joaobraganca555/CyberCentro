@@ -6,9 +6,9 @@ var xmlparser = require("express-xml-bodyparser");
 require('dotenv').config(); // Using .env configs
 
 import { AppDataSource } from "./data-source"
+var authRoute = require("./routes/authRoute");
 
 var indexRouter = require("./routes/indexRoute");
-var authRoute = require("./routes/authRoute");
 
 app.use(cors({
     credentials: true,

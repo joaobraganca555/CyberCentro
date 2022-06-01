@@ -47,61 +47,59 @@ invoiceInterface.insertInvoice = async (invoice: any) => {
   }
 };
 
+
 invoiceInterface.getAllInvoices = async function (req, res) {
 
-    const allInvoices = await invoiceRepository.find()
-    console.log("Invoices: ", allInvoices)
+  const allInvoices = await invoiceRepository.find()
+  console.log("Invoices: ", allInvoices)
 
-    return res.json(allInvoices);
+  return res.json(allInvoices);
 
 };
 
 invoiceInterface.getTotalGross = async function (req, res) {
 
-    const allInvoices = await invoiceRepository.find()
+  const allInvoices = await invoiceRepository.find()
 
-    return res.json(allInvoices.reduce((totalGross, invoice)=> parseFloat(invoice.grossTotal) + totalGross,0));
+  return res.json(allInvoices.reduce((totalGross, invoice)=> parseFloat(invoice.grossTotal) + totalGross,0));
 
 };
 
 invoiceInterface.getTotalGrossByYearAndMonth = async function (req, res) {
 
-    const allInvoices = await invoiceRepository.find()
+  const allInvoices = await invoiceRepository.find()
 
-    let date = new Date(req.body.date);
+  let date = new Date(req.body.date);
 
-    let number = allInvoices.filter(invoice =>
-            new Date(invoice.invoiceDate).getMonth() == date.getMonth() &&
-            new Date(invoice.invoiceDate).getFullYear() == date.getFullYear())
-        .reduce((totalGross, invoice)=> parseFloat(invoice.grossTotal) + totalGross,0);
+  let number = allInvoices.filter(invoice =>
+          new Date(invoice.invoiceDate).getMonth() == date.getMonth() &&
+          new Date(invoice.invoiceDate).getFullYear() == date.getFullYear())
+      .reduce((totalGross, invoice)=> parseFloat(invoice.grossTotal) + totalGross,0);
 
-    return res.json(number);
+  return res.json(number);
 
 };
 
 invoiceInterface.getTotalGrossByZone = async function (req, res) {
-    return res.json(await invoiceRepository
-        .query("SELECT sum(CAST(grossTotal AS float)) as totalGross, city FROM invoice\n" +
-            "INNER JOIN customer ON customerCustomerID = customer.customerID\n" +
-            "INNER JOIN billing_address on customer.billingAddressAddressId = billing_address.addressId\n" +
-            "GROUP BY city"));
+  return res.json(await invoiceRepository
+      .query("SELECT sum(CAST(grossTotal AS float)) as totalGross, city FROM invoice\n" +
+          "INNER JOIN customer ON customerCustomerID = customer.customerID\n" +
+          "INNER JOIN billing_address on customer.billingAddressAddressId = billing_address.addressId\n" +
+          "WHERE invoiceDate > CAST('2021' as DATE)\n" +
+          "AND invoiceDate < CAST('2022' as DATE)\n" +
+          "GROUP BY city"));
 
 };
 
 invoiceInterface.getGrossByFamilyByDate = async function (req, res) {
-    return res.json(await invoiceRepository
-        .query("Select sum(CAST(unitPrice AS float) * quantity * (1+ CAST(taxBase AS float)/100)) as total, productGroup From invoice_line\n" +
-            "INNER JOIN product ON invoice_line.productProductCode = product.productCode\n" +
-            "INNER JOIN invoice ON invoice_line.invoiceInvoiceNo = invoice.invoiceNo\n" +
-            "where invoiceDate > CAST(@0 as DATE)\n" +
-            "AND invoiceDate < CAST(@1 as DATE)\n" +
-            "GROUP BY productGroup",
-            [req.params.date.toString(),(parseInt(req.params.date)+1).toString()]));
+  return res.json(await invoiceRepository
+      .query("Select sum(CAST(unitPrice AS float) * quantity * (1+ CAST(taxBase AS float)/100)) as total, productGroup From invoice_line\n" +
+          "INNER JOIN product ON invoice_line.productProductCode = product.productCode\n" +
+          "INNER JOIN invoice ON invoice_line.invoiceInvoiceNo = invoice.invoiceNo\n" +
+          "where invoiceDate > CAST(@0 as DATE)\n" +
+          "AND invoiceDate < CAST(@1 as DATE)\n" +
+          "GROUP BY productGroup",
+          [req.params.date.toString(),(parseInt(req.params.date)+1).toString()]));
 };
 
-module.exports = invoiceInterface;
-
-
-
-
-
+//module.exports = invoiceInterface;

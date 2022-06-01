@@ -7,7 +7,6 @@ import { Invoice } from "./entity/Invoice";
 import { InvoiceLine } from "./entity/InvoiceLine";
 import { Product } from "./entity/Product";
 import { Supplier } from "./entity/Supplier";
-import { User } from "./entity/User";
 
 //Using .env configs
 require("dotenv").config();
@@ -19,7 +18,7 @@ export const AppDataSource = new DataSource({
   username: process.env.TYPEORM_USERNAME,
   password: process.env.TYPEORM_PASSWORD,
   database: process.env.TYPEORM_DATABASE,
-  synchronize: true,
+  synchronize: false,
   logging: false,
   entities: [
     BillingAddress,
@@ -28,7 +27,6 @@ export const AppDataSource = new DataSource({
     InvoiceLine,
     Supplier,
     Product,
-    User,
   ],
   migrations: ["migration/*.ts"],
   subscribers: [],
