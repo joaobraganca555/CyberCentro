@@ -1,0 +1,11 @@
+# Instalar plugin do VsCode REST Client para correr o pedido
+
+POST http://localhost:3000/api/auth/register HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample",
+    "email": "a@a",
+    "password": "12345678",
+    "password2": "12345678"
+}
