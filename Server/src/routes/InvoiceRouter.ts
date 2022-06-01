@@ -7,11 +7,11 @@ import {  invoiceInterface } from "../controllers/InvoiceController";
 
 router.get("", invoiceInterface.getAllInvoices);
 router.get("/totalGross", invoiceInterface.getTotalGross);
-router.get("/zone", invoiceInterface.getTotalGrossByZone);
+
+router.get("/getGrossByZoneByDate/:date", invoiceInterface.getTotalGrossByZone);
 router.get("/getGrossByFamilyByDate/:date", invoiceInterface.getGrossByFamilyByDate);
 
 router.post("/totalGrossByYearAndMonth", invoiceInterface.getTotalGrossByYearAndMonth);
-
 
 
 module.exports = router;
