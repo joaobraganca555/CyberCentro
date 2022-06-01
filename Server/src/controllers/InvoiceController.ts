@@ -85,8 +85,8 @@ invoiceInterface.getTotalGrossByZone = async function (req, res) {
       .query(`SELECT sum(CAST(grossTotal AS float)) as totalGross, city FROM invoice
       INNER JOIN customer ON customerCustomerID = customer.customerID
       INNER JOIN billing_address on customer.billingAddressAddressId = billing_address.addressId
-      WHERE invoiceDate > CAST('2022' as DATE)
-      AND invoiceDate < CAST('2023' as DATE)
+      WHERE invoiceDate > CAST(@0 as DATE)
+      AND invoiceDate < CAST(@1 as DATE)
       GROUP BY city
       ORDER by totalGross
       DESC`,
