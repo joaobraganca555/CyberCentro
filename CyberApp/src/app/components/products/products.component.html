@@ -75,52 +75,25 @@
 <!-- ---------------------------------------------------------------- -->
 
 <div class="small-content">
-  <!-- Chart 2 -->
-  <div class="content">
+  <div class="content border-l">
     <div class="container sample">
       <div class="options vertical">
         <span id="legendTitle">Top 10 products with the most revenue</span>
         <igx-legend #legend orientation="Horizontal"></igx-legend>
       </div>
       <div class="container">
-        <igx-category-chart height="100%" width="100%" 
-                    [legend]="legend"
-                    [dataSource]="topProductsGross"
-                    chartType="Column"
-                    xAxisInterval="1"
-                    yAxisTitle="Billions of U.S. Dollars"
-                    yAxisTitleLeftMargin="10"
-                    yAxisTitleRightMargin="5"
-                    yAxisLabelLeftMargin="0"
-                    isHorizontalZoomEnabled="false"
-                    isVerticalZoomEnabled="false">
+        <igx-category-chart height="100%" width="100%" [legend]="legend" [dataSource]="topProductsGross"
+          chartType="Column" xAxisInterval="1" yAxisTitle="Billions of U.S. Dollars" yAxisTitleLeftMargin="10"
+          yAxisTitleRightMargin="5" yAxisLabelLeftMargin="0" isHorizontalZoomEnabled="false"
+          isVerticalZoomEnabled="false">
         </igx-category-chart>
       </div>
     </div>
   </div>
 
-  <div class="content border-l">
-    
-      <div class="container sample">
-        <div class="options vertical">
-            <span id="legendTitle">Gross by family product</span>
-            <igx-item-legend #legend></igx-item-legend>
-        </div>
-    
-        <div class="container">
-            <igx-pie-chart height="100%"
-                width="100%"
-                [dataSource]="totalGrossByFamily"
-                [legend]="legend"
-                valueMemberPath="total"
-                labelMemberPath="productGroup"
-                labelsPosition="BestFit"
-                radiusFactor="0.8">
-            </igx-pie-chart>
-        </div>
+    <!-- Chart 2 -->
+    <div class="border-l">
+      <google-chart [data]="pieChart" *ngIf="flag"></google-chart>
     </div>
-    
-    
-  </div>
 
 </div>
