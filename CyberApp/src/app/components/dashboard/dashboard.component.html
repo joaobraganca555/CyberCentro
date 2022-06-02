@@ -53,14 +53,15 @@
 
   <!-- Line Chart -->
   <div class="content border-l p-1">
+        
     <div class="container sample">
       <div class="options vertical">
-          <span id="legendTitle">Renewable Electricity Generated</span>
+          <span id="legendTitle">Invoice per month</span>
           <igx-legend #legend orientation="horizontal"></igx-legend>
       </div>
       <div class="container">
           <igx-category-chart height="100%" width="100%"
-              [dataSource]="data"
+              [dataSource]="totalGrossByMonth"
               [legend]="legend"
               chartType="line"
               yAxisTitle="TWh"
@@ -68,17 +69,8 @@
           </igx-category-chart>
       </div>
     </div>
-  </div>
 
-</div>
-
-<!-- Divider -->
-<hr/>
-
-<div class="large-content column">
-  
-  <div class="yearPicker p-1">
-    <h5 class="m-2">Choose the year</h5>
+    <div class="yearPicker p-1">
       <div class="btn-group me-3 m-1">
         <button type="button" class="btn btn-primary">{{yearValue}}</button>
         <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
@@ -88,7 +80,16 @@
           </div>
         </div>
       </div>
+    </div>
+
   </div>
+
+</div>
+
+<!-- Divider -->
+<hr/>
+
+<div class="large-content">
 
   <div class="content">
     <div class="container sample">
