@@ -99,5 +99,3 @@ invoiceInterface.getGrossByFamilyByDate = async function (req, res) {
           "GROUP BY productGroup",
           [req.params.date.toString(),(parseInt(req.params.date)+1).toString()]));
 };
-
-//module.exports = invoiceInterface;

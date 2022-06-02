@@ -7,6 +7,8 @@ import { ErrorHandler } from "../utils/ErrorHandler";
 
 export const supplierInterface: any = {};
 
+const supplierRepository = AppDataSource.getRepository(Supplier)
+
 supplierInterface.insertSupplier = async (supplier: any) => {
   const billingAddress = new BillingAddress();
   billingAddress.city = supplier.BillingAddress[0].City ?? "NOT_DEFINED";
@@ -54,4 +56,14 @@ supplierInterface.importCSV = async (req, res) => {
       });
       res.status(200);
     });
+};
+
+supplierInterface.totalSpent = async function (req, res) {
+  return res.json(await supplierRepository
+    .query(`SELECT sum( CAST( REPLACE(totalPrice, ' ', '') as float)) as total from purchase`))
+};
+
+supplierInterface.topSuppliers = async function (req, res) {
+  return res.json(await supplierRepository
+    .query(`SELECT sum( CAST( REPLACE(totalPrice, ' ', '') as float)) as total from purchase`))
 };
