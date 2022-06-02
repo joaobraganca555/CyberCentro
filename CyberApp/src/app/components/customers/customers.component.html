@@ -23,7 +23,21 @@
   </div>
 
   <div class="content">
-
+      <!-- Year picker -->
+    <div class="yearPicker p-1 end">
+      <h5 class="m-2">Choose the year</h5>
+      <div class="btn-group me-3 m-1">
+        <button type="button" class="btn btn-primary">{{ yearValue }}</button>
+        <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle-split" ngbDropdownToggle></button>
+          <div class="dropdown-menu" ngbDropdownMenu>
+            <button *ngFor="let year of yearsList" ngbDropdownItem (click)="selectYear(year)">
+              {{ year }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

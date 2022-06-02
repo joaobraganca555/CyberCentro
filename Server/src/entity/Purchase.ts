@@ -1,20 +1,22 @@
-// import { Column, Entity, JoinColumn, OneToOne, PrimaryColumn } from "typeorm";
+import { Column, Entity, JoinColumn, OneToOne, PrimaryColumn } from "typeorm";
 
-// @Entity()
-// export class Purchase {
-//   @PrimaryColumn()
-//   supplierID: string;
+@Entity()
+export class Purchase {
+  @Column()
+  supplierCode: string;
 
-//   @Column()
-//   supplierTaxID: string;
+  @Column()
+  documentID: string;
 
-//   @Column()
-//   companyName: string;
+  @Column()
+  date: Date;
 
-//   @Column()
-//   telephone: string;
+  @Column()
+  price: number;
 
-//   @OneToOne(() => BillingAddress)
-//   @JoinColumn()
-//   billingAddress: BillingAddress;
-// }
+  @Column()
+  tax: number;
+
+  @Column()
+  totalPrice: number;
+}
