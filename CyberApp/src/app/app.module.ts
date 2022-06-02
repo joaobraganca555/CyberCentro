@@ -29,6 +29,7 @@ import {
  
 import { SuppliersComponent } from './components/suppliers/suppliers.component';
 import { CustomersComponent } from './components/customers/customers.component';
+import { FooterComponent } from './shared/footer/footer/footer.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { CustomersComponent } from './components/customers/customers.component';
     DashboardComponent,
     SuppliersComponent,
     CustomersComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

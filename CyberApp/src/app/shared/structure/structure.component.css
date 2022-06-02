@@ -2,7 +2,7 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 0.605fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1.9fr 1.3fr 0.25fr;
+  grid-template-rows: 0.2fr 1.9fr 1.3fr 0.2fr;
   grid-template-areas:
     "nav nav nav nav"
     "sidebar main main main"
@@ -41,7 +41,7 @@ main {
 }*/
 
 footer {
-  border: 1px solid green;
+
   grid-area: footer;
 }
 
