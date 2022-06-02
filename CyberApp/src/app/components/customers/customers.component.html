@@ -32,14 +32,27 @@
 <div class="small-content">
  
    <!-- Chart 1 -->
-   <div class="content">
+    <div class="content">
+      <div class="options vertical" >
+        <label id="legendTitle">Top Customer</label>
+    </div>
 
+    <igx-data-chart #chart isHorizontalZoomEnabled="false" isVerticalZoomEnabled="false" width="100%"
+        height="100%" [dataSource]="topCustomer">
+
+        <igx-numeric-x-axis #xAxis labelFormat="{0} EUR"></igx-numeric-x-axis>
+        <igx-category-y-axis #yAxis label="companyName" [dataSource]="topCustomer" isInverted="true" gap="0.75"></igx-category-y-axis>
+
+        <igx-bar-series [dataSource]="topCustomer"
+        valueMemberPath="totalGross"
+        [xAxis]="xAxis" [yAxis]="yAxis"
+        showDefaultTooltip="true"
+        isTransitionInEnabled="true"
+        isHighlightingEnabled="true">
+        </igx-bar-series>
+    </igx-data-chart>
    </div>
  
-   <!-- Chart 2 -->
-   <div class="content">
-   
-   </div>
  
    <!-- Chart 3 -->
    <div class="content">
