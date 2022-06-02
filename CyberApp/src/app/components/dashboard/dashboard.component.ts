@@ -11,6 +11,7 @@ export class DashboardComponent implements OnInit {
   totalGross: number = 0;
   customersNumber: number = 0;
   grossByZone: any[] = [];
+  totalGrossByMonth: any[] = [];
 
   yearsList: string[] = ['2018','2019','2020','2021','2022'];
   yearValue: string = '';
@@ -52,7 +53,9 @@ export class DashboardComponent implements OnInit {
 
     this.yearValue = new Date().getFullYear().toString()  // returns the current year
 
-    this.invoicesService.getTotalGrossByZone(this.yearValue).subscribe((res)=>{this.grossByZone = res; console.log(res);})
+    this.invoicesService.getTotalGrossByZone(this.yearValue).subscribe((res)=>{this.grossByZone = res;})
+    //this.invoicesService.getTotalGrossByYearAndMonth(this.yearValue).subscribe((res)=>{this.totalGrossByMonth = res;
+      // console.log(res)})
   }
 
   selectYear(year: string) {
@@ -60,6 +63,7 @@ export class DashboardComponent implements OnInit {
     this.invoicesService.getTotalGrossByZone(this.yearValue).subscribe((res: any) => {
       this.grossByZone = res;
     })
+    this.invoicesService.getTotalGrossByYearAndMonth(this.yearValue).subscribe((res)=>{this.totalGrossByMonth = res;})
   }
 
 }

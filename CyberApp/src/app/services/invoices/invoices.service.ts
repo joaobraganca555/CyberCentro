@@ -23,8 +23,8 @@ export class InvoicesService {
     return this.http.get<number>(this.API_GET_TOTAL_GROSS);
   }
 
-  getTotalGrossByYearAndMonth(inputDate: Date) {
-    return this.http.post<any>(this.API_GET_TOTAL_GROSS_BY_YEAR_AND_MONTH, { date: inputDate });
+  getTotalGrossByYearAndMonth(year: any) {
+    return this.http.get<any>(`${this.API_GET_TOTAL_GROSS_BY_YEAR_AND_MONTH}/${year}`);
   }
 
   getTotalGrossByZone(year: any) {
