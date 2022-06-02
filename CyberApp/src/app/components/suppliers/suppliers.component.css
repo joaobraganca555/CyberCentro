@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     height: 55%;
-    border: 1px solid blue
+   /*  border: 1px solid blue */
 }
 
 .small-content {
@@ -11,22 +11,49 @@
     height: 45%;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid orange
+/*     border: 1px solid orange */
 }
 
 .content {
     display: flex;
     height: 100%;
     flex-grow: 1;
-    border: 1px solid brown;
+    padding-bottom: 10px;
+/*     border: 1px solid brown; */
+}
+
+.content-table {
+    display: flex;
+    height: 100%;
+    padding: 7px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
 }
 
 /* For Ignite Charts */
-/*.mt {
+.mt {
     margin-top: 20px;
 }
 
 .container {
     width: 100%;
     height: 92%;
-}*/
+}
+
+.yearPicker {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.end {
+    justify-content: flex-end;
+}
+
+.border-l {
+    border-left: 1px solid rgb(213, 210, 210);
+}

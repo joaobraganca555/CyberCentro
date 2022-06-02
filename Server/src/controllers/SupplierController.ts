@@ -66,7 +66,7 @@ supplierInterface.totalSpent = async function (req, res) {
 supplierInterface.topSuppliers = async function (req, res) {
   res.json(await supplierRepository
     .query(`
-                  SELECT * from supplier LEFT JOIN
+                  SELECT companyName, total from supplier LEFT JOIN
                   (SELECT sum( CAST( REPLACE(totalPrice, ' ', '') as float)) as total, supplierId FROM supplier LEFT JOIN
                   purchase ON supplier.supplierID = purchase.supplierSupplierID
                   WHERE dateP > CAST( @0 as DATE) 

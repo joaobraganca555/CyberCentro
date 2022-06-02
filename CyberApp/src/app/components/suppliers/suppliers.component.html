@@ -1,30 +1,70 @@
 <div class="large-content">
-     <div class="content">
-        
+  <div class="content-table column">
+    <div>
+      <h3>Suppliers list</h3>
     </div>
-  
-    <div class="content">
-    
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered">
+        <thead class="table-light sticky-top">
+          <tr>
+            <th *ngFor="let column of displayedColumns" scope="col">
+              {{ column }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let supplier of suppliers">
+            <td>{{ supplier.supplierID }}</td>
+            <td>{{ supplier.companyName }}</td>
+            <td>{{ supplier.telephone }}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-</div>
-  
-<div class="small-content">
-  
-    <!-- Chart 1 -->
-    <div class="content">
+  </div>
 
+  <div class="content column">
+    <!-- Year picker -->
+    <div class="yearPicker p-1 end">
+      <h5 class="m-2">Choose the year</h5>
+      <div class="btn-group me-3 m-1">
+        <button type="button" class="btn btn-primary">{{ yearValue }}</button>
+        <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle-split" ngbDropdownToggle></button>
+          <div class="dropdown-menu" ngbDropdownMenu>
+            <button *ngFor="let year of yearsList" ngbDropdownItem (click)="selectYear(year)">
+              {{ year }}
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-  
-    <!-- Chart 2 -->
-    <div class="content">
-    
+
+    <div class="container sample border-l">
+      <div class="options vertical">
+          <span id="legendTitle">Top suppliers costs</span>
+          <igx-legend #legend orientation="Horizontal"></igx-legend>
+      </div>
+      <div class="container">
+          <igx-category-chart height="100%" width="100%"
+                      [legend]="legend"
+                      [dataSource]="topSuppliers"
+                      chartType="Column"
+                      xAxisInterval="1"
+                      yAxisTitle="Spent"
+                      yAxisTitleLeftMargin="10"
+                      yAxisTitleRightMargin="5"
+                      yAxisLabelLeftMargin="0"
+                      isHorizontalZoomEnabled="false"
+                      isVerticalZoomEnabled="false">
+          </igx-category-chart>
+      </div>
     </div>
-  
-    <!-- Chart 3 -->
-    <div class="content">
-  
-    </div>
+
+  </div>
 </div>
-  
-  
-    
+
+<hr class="my-12" />
+
+<div class="small-content">
+</div>
