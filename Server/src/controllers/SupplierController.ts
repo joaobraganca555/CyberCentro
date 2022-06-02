@@ -38,7 +38,7 @@ supplierInterface.importCSV = async (req, res) => {
     .then((jsonObj) => {
       jsonObj.forEach(async element => {
         const purchase = new Purchase();
-        purchase.date = element.date;
+        purchase.dateP = element.date;
         purchase.price = element.price;
         purchase.tax = element.tax;
         purchase.totalPrice = element.totalPrice;
@@ -64,18 +64,22 @@ supplierInterface.totalSpent = async function (req, res) {
 };
 
 supplierInterface.topSuppliers = async function (req, res) {
-  res.json(await supplierInterface
-    .query("\n" +
-        "SELECT companyName, totalGross FROM customer LEFT JOIN\n" +
-        "            (SELECT sum(CAST(grossTotal AS float)) as totalGross, customerID FROM customer\n" +
-        "                LEFT JOIN invoice ON customer.customerID = invoice.customerCustomerID\n" +
-        "                LEFT JOIN invoice_line ON invoice.invoiceNo = invoice_line.invoiceInvoiceNo\n" +
-        "                WHERE invoice_line.productProductCode IS NOT NULL\n" +
-        "                AND invoiceDate > CAST( @0 as DATE) \n" +
-        "                AND invoiceDate < CAST( @1 as DATE) \n" +
-        "                GROUP by customerID) AS s ON s.customerID = customer.customerID          \n" +
-        "          ORDER BY totalGross\n" +
-        "        DESC",
+  res.json(await supplierRepository
+    .query(`
+                  SELECT * from supplier LEFT JOIN
+                  (SELECT sum( CAST( REPLACE(totalPrice, ' ', '') as float)) as total, supplierId FROM supplier LEFT JOIN
+                  purchase ON supplier.supplierID = purchase.supplierSupplierID
+                  WHERE dateP > CAST( @0 as DATE) 
+                  AND   dateP < CAST( @1 as DATE)
+                  GROUP BY supplierID  ) as s ON supplier.supplierID = s.supplierId
+                  ORDER BY total
+                  DESC `,
         [req.params.date.toString(),(parseInt(req.params.date)+1).toString()]));
+};
+
+
+supplierInterface.getAllSuppliers = async function (req, res) {
+  res.json(await supplierRepository
+    .query(`SELECT * from supplier`))
 };
 

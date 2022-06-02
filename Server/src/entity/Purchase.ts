@@ -13,7 +13,7 @@ export class Purchase {
   documentID: string;
 
   @Column()
-  date: string;
+  dateP: string;
 
   @Column()
   price: string;
