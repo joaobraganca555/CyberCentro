@@ -22,7 +22,9 @@ import {
 	IgxDataChartInteractivityModule,
   IgxCategoryChartModule,
   IgxPieChartModule,
-  IgxItemLegendModule
+  IgxItemLegendModule,
+  IgxRingSeriesModule,
+  IgxDoughnutChartModule,
  } from "igniteui-angular-charts";
  
 import { SuppliersComponent } from './components/suppliers/suppliers.component';
@@ -57,7 +59,9 @@ import { CustomersComponent } from './components/customers/customers.component';
 	  IgxDataChartInteractivityModule,
     IgxCategoryChartModule,
     IgxPieChartModule,
-    IgxItemLegendModule
+    IgxItemLegendModule,
+    IgxRingSeriesModule,
+    IgxDoughnutChartModule,
   ],
   providers: [FormBuilder,  
     { provide: JWT_OPTIONS, useValue: JWT_OPTIONS },

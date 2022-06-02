@@ -46,7 +46,7 @@ productInterface.getTopProductsByQuantity = async function (req, res) {
 
 productInterface.getTopProductsByTotalGross = async function (req, res) {
   res.json(await productRepository
-      .query("SELECT product.productCode, productDescription, soma FROM product LEFT JOIN\n" +
+      .query("SELECT productDescription, soma FROM product LEFT JOIN\n" +
           "    (SELECT sum(CAST(unitPrice AS float) * 1 + CAST(taxBase AS float)/100 ) as soma, productCode FROM product\n" +
           "        LEFT JOIN invoice_line ON product.productCode = productProductCode \n" +
           "        LEFT JOIN invoice ON invoice_line.invoiceInvoiceNo = invoice.invoiceNo\n" +

@@ -39,6 +39,11 @@
     align-items: center;
 }
 
+.border-l {
+    border-left: 1px solid rgb(213, 210, 210);
+}
+
+
 /* For Ignite Charts */
 .mt {
     margin-top: 20px;
@@ -47,4 +52,8 @@
 .container {
     width: 100%;
     height: 92%;
+}
+
+.end {
+    justify-content: flex-end;
 }
