@@ -64,6 +64,18 @@ supplierInterface.totalSpent = async function (req, res) {
 };
 
 supplierInterface.topSuppliers = async function (req, res) {
-  return res.json(await supplierRepository
-    .query(`SELECT sum( CAST( REPLACE(totalPrice, ' ', '') as float)) as total from purchase`))
+  res.json(await supplierInterface
+    .query("\n" +
+        "SELECT companyName, totalGross FROM customer LEFT JOIN\n" +
+        "            (SELECT sum(CAST(grossTotal AS float)) as totalGross, customerID FROM customer\n" +
+        "                LEFT JOIN invoice ON customer.customerID = invoice.customerCustomerID\n" +
+        "                LEFT JOIN invoice_line ON invoice.invoiceNo = invoice_line.invoiceInvoiceNo\n" +
+        "                WHERE invoice_line.productProductCode IS NOT NULL\n" +
+        "                AND invoiceDate > CAST( @0 as DATE) \n" +
+        "                AND invoiceDate < CAST( @1 as DATE) \n" +
+        "                GROUP by customerID) AS s ON s.customerID = customer.customerID          \n" +
+        "          ORDER BY totalGross\n" +
+        "        DESC",
+        [req.params.date.toString(),(parseInt(req.params.date)+1).toString()]));
 };
+
