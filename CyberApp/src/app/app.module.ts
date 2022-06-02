@@ -14,6 +14,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { ProductsComponent } from './components/products/products.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { JwtHelperService, JWT_OPTIONS } from '@auth0/angular-jwt';
+import { Ng2GoogleChartsModule } from 'ng2-google-charts';
 
 import { 
 	IgxDataChartCoreModule,
@@ -53,6 +54,9 @@ import { FooterComponent } from './shared/footer/footer/footer.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
+
+    // Google Charts
+    Ng2GoogleChartsModule,
 
     // Ignite Charts
     IgxDataChartCoreModule,
