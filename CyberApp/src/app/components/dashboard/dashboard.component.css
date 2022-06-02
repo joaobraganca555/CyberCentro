@@ -12,7 +12,7 @@
 .small-content {
     display: flex;
     width: 100%;
-    height: 45%;
+    height: 50%;
     flex-direction: row;
     flex-wrap: wrap;
     /* border: 1px solid orange */
@@ -79,11 +79,15 @@
 }
 
 .pink {
-    background-color: rgb(191, 142, 217);
+    background-color: rgb(130, 184, 255);
 }
 
 .green {
-    background-color: rgb(144, 217, 142);
+    background-color: rgb(99, 210, 95);
+}
+
+.yellow {
+    background-color: rgb(238, 211, 0);
 }
 
 .border-l {

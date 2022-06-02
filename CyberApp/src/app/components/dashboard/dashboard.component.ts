@@ -10,6 +10,7 @@ import { SuppliersService } from 'src/app/services/suppliers/suppliers.service';
 })
 export class DashboardComponent implements OnInit {
   totalGross: number = 0;
+  totalSpent: number = 0;
   customersNumber: number = 0;
   grossByZone: any[] = [];
   totalGrossByMonth: any[] = [];
@@ -26,6 +27,10 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
     this.invoicesService.getTotalGross().subscribe((res) => {
       this.totalGross = Math.round((res + Number.EPSILON) * 100) / 100;
+    });
+
+    this.suppliersService.getTotalSpent().subscribe((res) => {
+      this.totalSpent = Math.round((res[0].total + Number.EPSILON) * 100) / 100;
     });
 
     this.customerService.getAllCustomers().subscribe((customers: any) => {

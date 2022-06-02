@@ -5,19 +5,34 @@
 
     <div class="content column p-1">
 
-      <div class="content-title red border">
+      <div class="content-title green border">
         Sales
       </div>
 
       <div class="centered border pr">
         <div class="info">
-          <i class="p-2 fa-3x fa-solid fa-coins"></i>
+          <i class="p-2 fa-3x fa-solid fa-money-bill-trend-up"></i>
         </div>
         <div class="info">
-          <p class="number">€ {{totalGross}}</p>
+          <p class="number">{{totalGross | currency}}</p>
         </div>
       </div>
     
+    </div>
+
+    <div class="content column p-1">
+      <div class="content-title yellow border">
+        Margin
+      </div>
+
+      <div class="centered border pr">
+        <div class="info">
+          <i class="p-2 fa-3x fa-solid fa-sack-dollar"></i>
+        </div>
+        <div class="info">
+          <p class="number">{{totalGross - totalSpent | currency}}</p>
+        </div>
+      </div>
     </div>
 
     <div class="content column p-1">
@@ -36,16 +51,16 @@
     </div>
 
     <div class="content column p-1">
-      <div class="content-title green border">
-        Others
+      <div class="content-title red border">
+        Costs
       </div>
 
       <div class="centered border pr">
         <div class="info">
-          <i class="p-2 fa-3x fa-solid fa-users"></i>
+          <i class="p-2 fa-3x fa-solid fa-coins"></i>
         </div>
         <div class="info">
-          <p class="number">€ {{totalGross}}</p>
+          <p class="number">{{totalSpent | currency}}</p>
         </div>
       </div>
     </div>

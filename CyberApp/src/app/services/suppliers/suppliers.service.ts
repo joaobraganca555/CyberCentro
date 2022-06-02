@@ -9,11 +9,11 @@ import { environment } from '../../../environments/environment';
 export class SuppliersService {
   API_URL: string = environment.api_url;
   API_GET_ALL_SUPPLIERS: string = `${this.API_URL}/`
-  API_GET_TOTAL_SPENT: string = `${this.API_URL}/totalSpent`
+  API_GET_TOTAL_SPENT: string = `${this.API_URL}/supplier/totalSpent`
 
   constructor(private http: HttpClient) { }
 
   getTotalSpent() {
-    return this.http.get(this.API_GET_TOTAL_SPENT)
+    return this.http.get<any>(this.API_GET_TOTAL_SPENT)
   }
 }
