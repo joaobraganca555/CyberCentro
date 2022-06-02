@@ -13,7 +13,7 @@
         <div class="info">
           <i class="p-2 fa-3x fa-solid fa-coins"></i>
         </div>
-        <div class="info money-left">
+        <div class="info">
           <p class="number">€ {{totalGross}}</p>
         </div>
       </div>
@@ -29,7 +29,7 @@
         <div class="info">
           <i class="p-2 fa-3x fa-solid fa-users"></i>
         </div>
-        <div class="info customers-left">
+        <div class="info">
           <p class="number">{{customersNumber}}</p>
         </div>
       </div>
@@ -44,7 +44,7 @@
         <div class="info">
           <i class="p-2 fa-3x fa-solid fa-users"></i>
         </div>
-        <div class="info money-left">
+        <div class="info">
           <p class="number">€ {{totalGross}}</p>
         </div>
       </div>
@@ -75,7 +75,21 @@
 <!-- Divider -->
 <hr/>
 
-<div class="large-content">
+<div class="large-content column">
+  
+  <div class="yearPicker p-1">
+    <h5 class="m-2">Choose the year</h5>
+      <div class="btn-group me-3 m-1">
+        <button type="button" class="btn btn-primary">{{yearValue}}</button>
+        <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle-split" ngbDropdownToggle></button>
+          <div class="dropdown-menu" ngbDropdownMenu>
+            <button *ngFor="let year of yearsList" ngbDropdownItem (click)="selectYear(year)">{{year}}</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
   <div class="content">
     <div class="container sample">
       <div class="options vertical">
@@ -97,9 +111,6 @@
           </igx-category-chart>
       </div>
     </div>  
-  </div>
-  <div class="content">
-    
   </div>
 
 </div>
