@@ -1,6 +1,9 @@
+const csv = require("csvtojson");
 import { AppDataSource } from "../data-source";
 import { BillingAddress } from "../entity/BillingAddress";
+import { Purchase } from "../entity/Purchase";
 import { Supplier } from "../entity/Supplier";
+import { ErrorHandler } from "../utils/ErrorHandler";
 
 export const supplierInterface: any = {};
 
@@ -8,8 +11,10 @@ supplierInterface.insertSupplier = async (supplier: any) => {
   const billingAddress = new BillingAddress();
   billingAddress.city = supplier.BillingAddress[0].City ?? "NOT_DEFINED";
   billingAddress.country = supplier.BillingAddress[0].Country ?? "NOT_DEFINED";
-  billingAddress.postalCode = supplier.BillingAddress[0].PostalCode ?? "NOT_DEFINED";
-  billingAddress.addressDetail = supplier.BillingAddress[0].AddressDetail ?? "NOT_DEFINED";
+  billingAddress.postalCode =
+    supplier.BillingAddress[0].PostalCode ?? "NOT_DEFINED";
+  billingAddress.addressDetail =
+    supplier.BillingAddress[0].AddressDetail ?? "NOT_DEFINED";
 
   await AppDataSource.manager.save(billingAddress);
 
@@ -21,4 +26,32 @@ supplierInterface.insertSupplier = async (supplier: any) => {
   newSupplier.billingAddress = billingAddress;
 
   await AppDataSource.manager.save(newSupplier);
+};
+
+supplierInterface.importCSV = async (req, res) => {
+  const csvFilePath = "public/comprasCSV.csv";
+
+  csv()
+    .fromFile(csvFilePath)
+    .then((jsonObj) => {
+      jsonObj.forEach(async element => {
+        const purchase = new Purchase();
+        purchase.date = element.date;
+        purchase.price = element.price;
+        purchase.tax = element.tax;
+        purchase.totalPrice = element.totalPrice;
+        purchase.documentID = element.documentID;
+        purchase.supplierCode = element.supplierCode;
+
+        try {
+          const supplier: Supplier = await AppDataSource.manager.findOneByOrFail(Supplier,{supplierID: element.supplierID});
+          purchase.supplier = supplier;
+        } catch (error) {
+          ErrorHandler.reportError(ErrorHandler.getErrorMessage(error));
+        }
+
+        await AppDataSource.manager.save(purchase);
+      });
+      res.status(200);
+    });
 };

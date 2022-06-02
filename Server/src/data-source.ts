@@ -6,6 +6,7 @@ import { Header } from "./entity/Header";
 import { Invoice } from "./entity/Invoice";
 import { InvoiceLine } from "./entity/InvoiceLine";
 import { Product } from "./entity/Product";
+import { Purchase } from "./entity/Purchase";
 import { Supplier } from "./entity/Supplier";
 import { User } from "./entity/User";
 
@@ -29,6 +30,7 @@ export const AppDataSource = new DataSource({
     Supplier,
     Product,
     User,
+    Purchase
   ],
   migrations: ["migration/*.ts"],
   subscribers: [],

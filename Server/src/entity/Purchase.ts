@@ -1,7 +1,11 @@
-import { Column, Entity, JoinColumn, OneToOne, PrimaryColumn } from "typeorm";
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
+import { Supplier } from "./Supplier";
 
 @Entity()
 export class Purchase {
+  @PrimaryGeneratedColumn()
+  purchaseID: string;
+
   @Column()
   supplierCode: string;
 
@@ -9,14 +13,17 @@ export class Purchase {
   documentID: string;
 
   @Column()
-  date: Date;
+  date: string;
 
   @Column()
-  price: number;
+  price: string;
 
   @Column()
-  tax: number;
+  tax: string;
 
   @Column()
-  totalPrice: number;
+  totalPrice: string;
+
+  @ManyToOne(() => Supplier, (supplier) => supplier.supplierID)
+  supplier: Supplier;
 }
