@@ -34,4 +34,7 @@
   flex-direction: row;
 }
 
-
+.size {
+  width: 200px;
+  height: 200px;
+}
