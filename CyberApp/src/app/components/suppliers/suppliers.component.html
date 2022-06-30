@@ -42,7 +42,7 @@
 
     <div class="container sample border-l">
       <div class="options vertical">
-          <span id="legendTitle">Top most requested suppliers</span>
+          <span id="legendTitle">Purchases by supplier</span>
           <igx-legend #legend orientation="Horizontal"></igx-legend>
       </div>
       <div class="container">
@@ -51,7 +51,7 @@
                       [dataSource]="topSuppliers"
                       chartType="Column"
                       xAxisInterval="1"
-                      yAxisTitle="Spent"
+                      yAxisTitle="Total €"
                       yAxisTitleLeftMargin="10"
                       yAxisTitleRightMargin="5"
                       yAxisLabelLeftMargin="0"

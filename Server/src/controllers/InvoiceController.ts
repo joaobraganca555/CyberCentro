@@ -67,7 +67,7 @@ invoiceInterface.getTotalGross = async function (req, res) {
 
 invoiceInterface.getTotalGrossByYearAndMonth = async function (req, res) {
   return res.json(await invoiceRepository
-      .query(`SELECT (MONTH(invoiceDate)) as month, sum(CAST(grossTotal as float)) as totalGross from invoice
+      .query(`SELECT (MONTH(invoiceDate)) as month, sum(CAST(grossTotal as float)) as total from invoice
       WHERE invoiceDate > CAST( @0 as DATE)
       AND invoiceDate < CAST( @1 as DATE)
       GROUP BY (MONTH(invoiceDate))`,
@@ -77,13 +77,13 @@ invoiceInterface.getTotalGrossByYearAndMonth = async function (req, res) {
 
 invoiceInterface.getTotalGrossByZone = async function (req, res) {
   return res.json(await invoiceRepository
-      .query(`SELECT sum(CAST(grossTotal AS float)) as totalGross, city FROM invoice
+      .query(`SELECT sum(CAST(grossTotal AS float)) as total, city FROM invoice
       INNER JOIN customer ON customerCustomerID = customer.customerID
       INNER JOIN billing_address on customer.billingAddressAddressId = billing_address.addressId
       WHERE invoiceDate > CAST(@0 as DATE)
       AND invoiceDate < CAST(@1 as DATE)
       GROUP BY city
-      ORDER by totalGross
+      ORDER by total
       DESC`,
           [req.params.date.toString(),(parseInt(req.params.date)+1).toString()]));
 

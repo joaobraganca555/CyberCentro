@@ -47,13 +47,12 @@
     <div class="content border-l">
       <div class="container sample">
         <div class="options vertical">
-          <span id="legendTitle">Top selling products</span>
-          <igx-legend #legend orientation="Horizontal"></igx-legend>
+          <span id="legendTitle">Quantities of products sold</span>
         </div>
 
         <div class="container">
           <igx-data-chart #chart isHorizontalZoomEnabled="false" isVerticalZoomEnabled="false" width="100%"
-            height="100%" [dataSource]="topProductsQuantity" [legend]="legend">
+            height="100%" [dataSource]="topProductsQuantity">
             <igx-numeric-x-axis title="Quantity" #xAxis> </igx-numeric-x-axis>
             <igx-category-y-axis label="productDescription" [dataSource]="topProductsQuantity" #yAxis isInverted="true"
               gap="0.5" overlap="-0.1">
@@ -78,12 +77,12 @@
   <div class="content">
     <div class="container sample">
       <div class="options vertical">
-        <span id="legendTitle">Top 10 products with the most revenue</span>
+        <span id="legendTitle">Top 10 selling products</span>
         <igx-legend #legend orientation="Horizontal"></igx-legend>
       </div>
       <div class="container">
         <igx-category-chart height="100%" width="100%" [legend]="legend" [dataSource]="topProductsGross"
-          chartType="Column" xAxisInterval="1" yAxisTitle="Revenue" yAxisTitleLeftMargin="10"
+          chartType="Column" xAxisInterval="1" yAxisTitle="Total €" yAxisTitleLeftMargin="10"
           yAxisTitleRightMargin="5" yAxisLabelLeftMargin="0" isHorizontalZoomEnabled="false"
           isVerticalZoomEnabled="false">
         </igx-category-chart>

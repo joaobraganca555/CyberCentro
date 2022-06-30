@@ -66,7 +66,7 @@ export class ProductsComponent implements OnInit {
           dataTable: this.dataGoogle,
           //firstRowIsData: true,
           options: {
-            title: 'Gross by family',
+            title: 'Sales by family',
             chartArea: {
               height: '100%',
               width: '100%',

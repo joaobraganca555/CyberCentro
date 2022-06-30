@@ -36,17 +36,17 @@ customerInterface.insertCustomer = async function(customer: any){
 
 customerInterface.getTopCustomers = async function (req, res) {
   res.json(await customerRepository
-      .query("\n" +
-          "SELECT companyName, totalGross FROM customer LEFT JOIN\n" +
-          "            (SELECT sum(CAST(grossTotal AS float)) as totalGross, customerID FROM customer\n" +
-          "                LEFT JOIN invoice ON customer.customerID = invoice.customerCustomerID\n" +
-          "                LEFT JOIN invoice_line ON invoice.invoiceNo = invoice_line.invoiceInvoiceNo\n" +
-          "                WHERE invoice_line.productProductCode IS NOT NULL\n" +
-          "                AND invoiceDate > CAST( @0 as DATE) \n" +
-          "                AND invoiceDate < CAST( @1 as DATE) \n" +
-          "                GROUP by customerID) AS s ON s.customerID = customer.customerID          \n" +
-          "          ORDER BY totalGross\n" +
-          "        DESC",
+      .query(`
+          SELECT totalGross, companyName FROM customer
+          INNER JOIN
+            (SELECT SUM(CAST(grossTotal AS FLOAT)) as totalGross, customerID  FROM invoice
+            LEFT JOIN customer
+            ON customerCustomerID = customerID
+            AND invoiceDate > CAST( @0 as DATE) 
+            AND invoiceDate < CAST( @1 as DATE)
+            GROUP BY customerID) AS s ON s.customerID = customer.customerID 
+          ORDER BY totalGross
+          DESC`,
           [req.params.date.toString(),(parseInt(req.params.date)+1).toString()]));
 };
 

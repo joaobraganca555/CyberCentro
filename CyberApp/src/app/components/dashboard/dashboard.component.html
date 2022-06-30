@@ -14,7 +14,7 @@
           <i class="p-2 fa-3x fa-solid fa-money-bill-trend-up"></i>
         </div>
         <div class="info">
-          <p class="number">{{totalGross | currency}}</p>
+          <p class="number">{{totalGross | currency:'EUR'}}</p>
         </div>
       </div>
     
@@ -30,7 +30,7 @@
           <i class="p-2 fa-3x fa-solid fa-sack-dollar"></i>
         </div>
         <div class="info">
-          <p class="number">{{totalGross - totalSpent | currency}}</p>
+          <p class="number">{{totalGross - totalSpent | currency:'EUR'}}</p>
         </div>
       </div>
     </div>
@@ -60,7 +60,7 @@
           <i class="p-2 fa-3x fa-solid fa-coins"></i>
         </div>
         <div class="info">
-          <p class="number">{{totalSpent | currency}}</p>
+          <p class="number">{{totalSpent | currency:'EUR'}}</p>
         </div>
       </div>
     </div>
@@ -69,17 +69,16 @@
   <!-- Line Chart -->
   <div class="content border-l p-1">
         
-    <div class="container sample">
+    <div class="container">
       <div class="options vertical">
-          <span id="legendTitle">Invoice per month</span>
-          <igx-legend #legend orientation="horizontal"></igx-legend>
+          <span id="legendTitle">Sales by month</span>
       </div>
       <div class="container">
           <igx-category-chart height="100%" width="100%"
               [dataSource]="totalGrossByMonth"
               [legend]="legend"
               chartType="line"
-              yAxisTitle="TWh"
+              yAxisTitle="Total €"
               yAxisTitleLeftMargin="5">
           </igx-category-chart>
       </div>
@@ -108,18 +107,17 @@
 <div class="large-content">
 
   <div class="content">
-    <div class="container sample">
+    <div class="container">
       <div class="options vertical">
-          <span id="legendTitle">Gross By Zone</span>
+          <span id="legendTitle">Sales by zone</span>
           <igx-legend #legend orientation="Horizontal"></igx-legend>
       </div>
       <div class="container">
           <igx-category-chart height="100%" width="100%"
-                      [legend]="legend"
                       [dataSource]="grossByZone"
                       chartType="Column"
                       xAxisInterval="1"
-                      yAxisTitle="Total Gross"
+                      yAxisTitle="Total €"
                       yAxisTitleLeftMargin="10"
                       yAxisTitleRightMargin="5"
                       yAxisLabelLeftMargin="0"
